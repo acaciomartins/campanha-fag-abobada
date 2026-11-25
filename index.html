@@ -1,9 +1,16 @@
 <!doctype html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth" data-build="v2026.11.25-2026">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="app-version" content="v2026.11.25-2026">
+
+    <!-- Diretivas Anti-Cache para GitHub Pages e Navegadores -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title>33 Elos para Coroar o Novo Templo — ARLS Loja da Luz, 1234</title>
     <meta name="description" content="Campanha de arrecadação 100% revertida para a Pintura da Abóboda do Novo Templo da ARLS Loja da Luz, 1234.">
 
@@ -21,6 +28,7 @@
     <style>
         /* =====================================================================
            DESIGN TOKENS & PALETA AURA (PERGAMINHO QUENTE + AZUL MARINHO + BRONZE)
+           Build: v2026.11.25-2026
            ===================================================================== */
         :root {
             --event-color-button: #13213f;
@@ -319,7 +327,7 @@
         }
 
         /* =====================================================================
-           FORMULÁRIO ESTILO AURA / SIS333 (MODAL QUERO DOAR - ANEXO)
+           FORMULÁRIO ESTILO AURA / SIS333 (MODAL QUERO DOAR)
            ===================================================================== */
         .sis-form-label {
             display: block;
@@ -358,7 +366,7 @@
             box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
         }
 
-        /* Switch LGPD idêntico ao anexo */
+        /* Switch LGPD */
         .lgpd-switch-btn {
             position: relative;
             width: 52px;
@@ -550,8 +558,8 @@
         <section id="inicio" class="aura-hero">
             <div class="aura-container">
                 <div class="aura-hero__grid">
-                    
-                    <!-- Painel Esquerdo: Narrativa + Meta R$ 8.250,00 (via valorarrecadado.txt) -->
+
+                    <!-- Painel Esquerdo: Narrativa + Meta R$ 8.250,00 (via 1ª linha de valorarrecadado.txt) -->
                     <div class="aura-hero__content flex flex-col justify-between">
                         <div>
                             <div class="flex flex-wrap gap-2.5 mb-5">
@@ -576,7 +584,7 @@
                             </p>
                         </div>
 
-                        <!-- Barra de Progresso Dinâmica (Carregada de valorarrecadado.txt) -->
+                        <!-- Barra de Progresso Dinâmica (Lida exclusivamente da 1ª linha de ./valorarrecadado.txt) -->
                         <div class="rounded-2xl p-5 bg-white/10 border border-[#d1b171]/25 mb-6">
                             <div class="flex flex-wrap items-end justify-between gap-2 mb-2">
                                 <div>
@@ -627,8 +635,8 @@
 
                             <!-- Slide 0: Joia 33 Elos -->
                             <div id="heroSlide0" class="w-full h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-[#171b26] to-[#0c0e14] border border-[#b39158]/30 flex items-center justify-center p-4 overflow-hidden relative shadow-inner">
-                                <img src="assets/img/aneis.jpg" alt="Anel Comemorativo 33 Elos" class="w-full h-full object-contain rounded-xl" onerror="this.style.display='none'; document.getElementById('heroRingFallback').style.display='flex';">
-                                
+                                <img src="assets/img/aneis.jpg?v=20261125-2026" alt="Anel Comemorativo 33 Elos" class="w-full h-full object-contain rounded-xl" onerror="this.style.display='none'; document.getElementById('heroRingFallback').style.display='flex';">
+
                                 <!-- Fallback SVG 3D do Anel Maçônico em Bronze/Prata -->
                                 <div id="heroRingFallback" style="display: none;" class="w-full h-full flex-col items-center justify-center">
                                     <svg viewBox="0 0 360 220" class="w-full h-full max-h-56">
@@ -684,7 +692,7 @@
 
                             <!-- Slide 1: Miniatura do Certificado -->
                             <div id="heroSlide1" class="hidden w-full h-64 sm:h-72 rounded-2xl bg-[#fcfaf4] border-2 border-[#13213f]/25 p-4 flex-col items-center justify-center overflow-hidden relative shadow-inner">
-                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg" alt="Certificado Oficial 33 Elos" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('heroCertFallback').style.display='flex';">
+                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg?v=20261125-2026" alt="Certificado Oficial 33 Elos" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('heroCertFallback').style.display='flex';">
                                 <div id="heroCertFallback" style="display: none;" class="w-full h-full border border-[#b39158]/60 p-4 flex-col items-center justify-center text-center bg-[#fcfaf5]">
                                     <span class="px-2.5 py-0.5 border border-[#13213f]/35 text-[8.5px] font-bold tracking-[0.15em] uppercase text-[#13213f]">
                                         EDIÇÃO HISTÓRICA • Nº 01 / 33
@@ -789,7 +797,7 @@
                             </div>
                             <span class="block text-xs font-bold uppercase tracking-wider text-[#9f7a38] mb-1">Memória Viva</span>
                             <h3 class="text-2xl font-display font-bold text-[#18263f] mb-3">
-                                Legado Histórico da Loja
+                                Legado Histórico
                             </h3>
                             <p class="text-sm text-[#50637f] leading-relaxed">
                                 Cada guardião recebe o <strong>Certificado de Apoio e Fundação</strong> assinado pela Comissão de Obras, registrando para as futuras gerações seu compromisso com a luz, a harmonia e a edificação do Novo Templo.
@@ -837,8 +845,8 @@
 
                             <!-- Visualização Fiel do Certificado Oficial -->
                             <div class="w-full min-h-[260px] rounded-2xl bg-[#fcfaf4] border-2 border-[#13213f]/30 p-3 sm:p-5 flex items-center justify-center overflow-hidden mb-6 shadow-inner">
-                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg" alt="Certificado de Apoio e Fundação — Pintura da Abóboda" class="w-full max-h-72 object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('detailCertFallback').style.display='block';">
-                                
+                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg?v=20261125-2026" alt="Certificado de Apoio e Fundação — Pintura da Abóboda" class="w-full max-h-72 object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('detailCertFallback').style.display='block';">
+
                                 <!-- Fallback HTML Fiel ao Certificado Oficial -->
                                 <div id="detailCertFallback" style="display: none;" class="w-full border border-[#b39158]/60 p-4 sm:p-6 text-center bg-[#fcfaf5]">
                                     <span class="inline-block px-3 py-0.5 border border-[#13213f]/35 text-[9.5px] font-bold tracking-[0.16em] uppercase text-[#13213f]">
@@ -950,8 +958,8 @@
                             </svg>
                         </div>
 
-                        <div class="aura-price-card__value">R$ 50</div>
-                        <p class="text-sm font-medium text-[#50637f] mb-3">Ou qualquer valor livre</p>
+                        <div class="aura-price-card__value">Livre</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Qualquer valor de contribuição</p>
                         <p class="text-sm text-[#50637f] leading-relaxed">
                             É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
                         </p>
@@ -960,7 +968,7 @@
                             <p class="text-xs font-medium text-[#50637f] mb-4">
                                 Contribuição direta via Pix • 100% Pintura da Abóboda
                             </p>
-                            <button type="button" onclick="openDonationModal('Apoio Livre', 'R$ 50 (ou valor livre)', 'avista', false)" class="aura-button w-full">
+                            <button type="button" onclick="openDonationModal('Apoio Livre', 'Valor Livre', 'avista', false)" class="aura-button w-full">
                                 <i class="fas fa-hand-holding-heart"></i>
                                 <span>Quero Doar</span>
                             </button>
@@ -1024,12 +1032,12 @@
                                 <path d="M52,82 A28,28 0 1,1 108,82" fill="none" stroke="#e8cfa0" stroke-width="4" stroke-linecap="round"/>
                                 <path d="M108,78 A28,28 0 1,1 52,78" fill="none" stroke="#b39158" stroke-width="4" stroke-linecap="round"/>
                                 <text x="80" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff" font-family="Space Grotesk, sans-serif">33</text>
-                                <text x="80" y="102" text-anchor="middle" font-size="8.5" font-weight="600" fill="#e8cfa0" font-family="Sora, sans-serif">SINAL + PARCELAS</text>
+                                <text x="80" y="102" text-anchor="middle" font-size="8.5" font-weight="600" fill="#e8cfa0" font-family="Sora, sans-serif">SINAL + PROGRAMAÇÃO</text>
                             </svg>
                         </div>
 
                         <div class="aura-price-card__value">Sinal</div>
-                        <p class="text-sm font-medium text-[#50637f] mb-3">Entrada + programação de pagamento</p>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Sinal + Programação de pagamento</p>
                         <p class="text-sm text-[#50637f] leading-relaxed">
                             É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
                         </p>
@@ -1038,7 +1046,7 @@
                             <p class="text-xs font-medium text-[#50637f] mb-4">
                                 Deposite o sinal via Pix e envie sua programação de pagamento
                             </p>
-                            <button type="button" onclick="openDonationModal('Anel 33 Elos Parcelado', 'Sinal (Entrada) + Parcelas', 'parcelado', true)" class="aura-button w-full">
+                            <button type="button" onclick="openDonationModal('Anel 33 Elos Parcelado', 'Sinal + Programação (Total R$ 250,00)', 'parcelado', true)" class="aura-button w-full">
                                 <i class="fas fa-hand-holding-heart"></i>
                                 <span>Quero Doar</span>
                             </button>
@@ -1067,7 +1075,7 @@
                             </svg>
                         </div>
 
-                        <div class="aura-price-card__value">R$ 500</div>
+                        <div class="aura-price-card__value">R$ 1.000</div>
                         <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
                         <p class="text-sm text-[#50637f] leading-relaxed">
                             É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
@@ -1077,7 +1085,7 @@
                             <p class="text-xs font-medium text-[#50637f] mb-4">
                                 Pagamento via Pix • Reconhecimento Membro Construtor
                             </p>
-                            <button type="button" onclick="openDonationModal('Membro Construtor Bronze', 'R$ 500,00', 'avista', true)" class="aura-button w-full">
+                            <button type="button" onclick="openDonationModal('Membro Construtor Bronze', 'R$ 1.000,00', 'avista', true)" class="aura-button w-full">
                                 <i class="fas fa-hand-holding-heart"></i>
                                 <span>Quero Doar</span>
                             </button>
@@ -1106,7 +1114,7 @@
                             </svg>
                         </div>
 
-                        <div class="aura-price-card__value">R$ 1.000</div>
+                        <div class="aura-price-card__value">R$ 2.500</div>
                         <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
                         <p class="text-sm text-[#50637f] leading-relaxed">
                             É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
@@ -1116,7 +1124,7 @@
                             <p class="text-xs font-medium text-[#50637f] mb-4">
                                 Pagamento via Pix • Reconhecimento Membro Construtor
                             </p>
-                            <button type="button" onclick="openDonationModal('Membro Construtor Prata', 'R$ 1.000,00', 'avista', true)" class="aura-button w-full">
+                            <button type="button" onclick="openDonationModal('Membro Construtor Prata', 'R$ 2.500,00', 'avista', true)" class="aura-button w-full">
                                 <i class="fas fa-hand-holding-heart"></i>
                                 <span>Quero Doar</span>
                             </button>
@@ -1145,7 +1153,7 @@
                             </svg>
                         </div>
 
-                        <div class="aura-price-card__value">R$ 2.500</div>
+                        <div class="aura-price-card__value">R$ 5.000</div>
                         <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
                         <p class="text-sm text-[#50637f] leading-relaxed">
                             É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
@@ -1155,7 +1163,7 @@
                             <p class="text-xs font-medium text-[#50637f] mb-4">
                                 Pagamento via Pix • Benfeitor da Pintura da Abóboda
                             </p>
-                            <button type="button" onclick="openDonationModal('Membro Construtor Ouro', 'R$ 2.500,00', 'avista', true)" class="aura-button w-full">
+                            <button type="button" onclick="openDonationModal('Membro Construtor Ouro', 'R$ 5.000,00', 'avista', true)" class="aura-button w-full">
                                 <i class="fas fa-hand-holding-heart"></i>
                                 <span>Quero Doar</span>
                             </button>
@@ -1173,7 +1181,7 @@
     <footer class="aura-footer">
         <div class="aura-container">
             <div class="aura-footer__panel">
-                
+
                 <!-- Coluna Esquerda: Mensagem Fraterna -->
                 <div class="aura-footer__brand">
                     <span class="inline-block px-3 py-1 rounded-full bg-[#d1b171]/20 text-[#e8cfa0] text-xs font-bold uppercase tracking-wider mb-3">
@@ -1235,7 +1243,7 @@
          ===================================================================== -->
     <div id="donationModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
         <div id="donationModalBackdrop" class="absolute inset-0 bg-[#070b14]/75 backdrop-blur-sm"></div>
-        
+
         <div class="relative w-full max-w-xl rounded-[28px] bg-[#ffffff] border border-[#e2e8f0] shadow-2xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
             <!-- Cabeçalho do Modal -->
             <div class="flex items-start justify-between gap-4 pb-4 border-b border-slate-200">
@@ -1252,7 +1260,7 @@
             </div>
 
             <form id="donorRegistrationForm" onsubmit="handleDonationSubmit(event)" class="mt-5 space-y-4">
-                
+
                 <!-- 1. CEP * -->
                 <div>
                     <label for="donorCepInput" class="sis-form-label">
@@ -1266,7 +1274,7 @@
                     <label for="donorNameInput" class="sis-form-label">
                         Nome completo <span class="req">*</span>
                     </label>
-                    <input type="text" id="donorNameInput" required placeholder="" class="sis-form-input">
+                    <input type="text" id="donorNameInput" required placeholder="Seu nome completo" class="sis-form-input">
                 </div>
 
                 <!-- 3. E-mail * -->
@@ -1282,7 +1290,7 @@
                     <label for="donorCpfInput" class="sis-form-label">
                         CPF <span class="req">*</span>
                     </label>
-                    <input type="text" id="donorCpfInput" required maxlength="14" placeholder="CPF" class="sis-form-input">
+                    <input type="text" id="donorCpfInput" required maxlength="14" placeholder="000.000.000-00" class="sis-form-input">
                 </div>
 
                 <!-- 5. Celular * -->
@@ -1293,7 +1301,7 @@
                     <input type="tel" id="donorPhoneInput" required maxlength="19" placeholder="+55 (00) 00000-0000" class="sis-form-input">
                 </div>
 
-                <!-- 6. Switch Consentimento LGPD e Termos de Uso + Link -->
+                <!-- 6. Switch Consentimento LGPD e Termos de Uso + Link Modal de Termos -->
                 <div class="pt-1">
                     <div class="flex items-center gap-3">
                         <button type="button" id="lgpdSwitchBtn" role="switch" aria-checked="false" onclick="toggleLgpdConsent()" class="lgpd-switch-btn">
@@ -1306,12 +1314,9 @@
                         </span>
                     </div>
                     <div class="mt-2">
-                        <button type="button" onclick="togglePrivacyPolicyText()" class="text-xs text-[#7e22ce] underline hover:text-[#581c87] bg-transparent border-0 p-0 cursor-pointer font-medium">
+                        <button type="button" onclick="openPrivacyModal()" class="text-xs text-[#7e22ce] underline hover:text-[#581c87] bg-transparent border-0 p-0 cursor-pointer font-medium">
                             Ler política de privacidade e termos de uso
                         </button>
-                    </div>
-                    <div id="privacyPolicyBox" class="hidden mt-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 leading-relaxed">
-                        <strong>Política de Privacidade &amp; LGPD (ARLS Loja da Luz, 1234):</strong> Os dados pessoais informados (CEP, Nome completo, E-mail, CPF e Celular) serão utilizados exclusivamente para identificação do apoio, emissão nominal do Certificado de Autenticidade e controle logístico da entrega do anel comemorativo da campanha <em>33 Elos para Coroar o Novo Templo</em>, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
                     </div>
                 </div>
 
@@ -1330,7 +1335,7 @@
                     </div>
                 </div>
 
-                <!-- Aviso Parcelamento (conforme interesse-participacao.txt) -->
+                <!-- Aviso Parcelamento -->
                 <div id="parceladoInfoBox" class="hidden p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 leading-relaxed">
                     <strong><i class="fas fa-info-circle text-amber-700 mr-1"></i> Como funciona o parcelamento:</strong><br>
                     Você deposita um <strong>sinal (entrada)</strong> via Pix agora e envia mensagem privada junto com o comprovante informando a sua programação de pagamento das parcelas restantes.
@@ -1388,17 +1393,67 @@
         </div>
     </div>
 
+    <!-- =====================================================================
+         MODAL DE POLÍTICA DE PRIVACIDADE E TERMOS DE USO (LGPD)
+         ===================================================================== -->
+    <div id="privacyModal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4">
+        <div onclick="closePrivacyModal()" class="absolute inset-0 bg-[#070b14]/80 backdrop-blur-sm"></div>
+        <div class="relative w-full max-w-lg rounded-[28px] bg-[#fbf6ef] border border-[#b39158]/40 shadow-2xl p-6 sm:p-8 max-h-[88vh] overflow-y-auto">
+            <div class="flex items-start justify-between gap-4 pb-4 border-b border-[#b39158]/20">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-[#13213f]/10 text-[#13213f] text-[11px] font-bold uppercase tracking-wider mb-1">
+                        Proteção de Dados • Lei nº 13.709/2018
+                    </span>
+                    <h3 class="text-xl sm:text-2xl font-display font-bold text-[#18263f]">
+                        Política de Privacidade e Termos de Uso
+                    </h3>
+                </div>
+                <button type="button" onclick="closePrivacyModal()" class="w-9 h-9 rounded-full bg-[#13213f]/10 hover:bg-[#13213f] hover:text-white text-[#13213f] flex items-center justify-center transition cursor-pointer shrink-0">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="mt-4 space-y-3.5 text-xs sm:text-sm text-[#41536f] leading-relaxed">
+                <p>
+                    <strong>1. Finalidade da Coleta:</strong> Os dados pessoais solicitados no formulário da campanha <em>“33 Elos para Coroar o Novo Templo”</em> (CEP, Nome completo, E-mail, CPF e Celular) são coletados exclusivamente pela Comissão de Obras da <strong>ARLS Loja da Luz, 1234</strong> para:
+                </p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Identificação e conferência do comprovante de contribuição financeira;</li>
+                    <li>Emissão nominal do <strong>Certificado de Autenticidade e Apoio</strong> (Exemplares 01 a 33);</li>
+                    <li>Contato e logística de entrega do anel comemorativo no tamanho de aro escolhido (M ou G).</li>
+                </ul>
+                <p>
+                    <strong>2. Destinação Integral dos Recursos:</strong> Todas as peças da edição limitada foram previamente patrocinadas, garantindo que 100% dos valores arrecadados sejam aplicados diretamente na etapa de Pintura da Abóboda do Novo Templo.
+                </p>
+                <p>
+                    <strong>3. Armazenamento e Sigilo:</strong> As informações fornecidas não serão compartilhadas, comercializadas ou cedidas a terceiros externos à administração da campanha, podendo o titular solicitar sua atualização ou exclusão a qualquer momento junto à Secretaria da Loja.
+                </p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-[#b39158]/20 flex flex-wrap justify-end gap-3">
+                <button type="button" onclick="closePrivacyModal()" class="aura-button aura-button--secondary">
+                    <span>Fechar</span>
+                </button>
+                <button type="button" onclick="acceptPrivacyFromModal()" class="aura-button">
+                    <i class="fas fa-check"></i>
+                    <span>Li e Aceito os Termos</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast de Notificação (Substitui alert()) -->
-    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#13213f] text-white text-sm font-semibold shadow-2xl border border-[#d1b171]/40">
+    <div id="toastNotification" class="fixed bottom-5 right-5 z-[70] hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#13213f] text-white text-sm font-semibold shadow-2xl border border-[#d1b171]/40">
         <i class="fas fa-check-circle text-[#e8cfa0]" id="toastIcon"></i>
         <span id="toastMessageText">Copiado com sucesso!</span>
     </div>
 
     <!-- =====================================================================
-         JAVASCRIPT INTERATIVO (CARROSSEL, VALORARRECADADO.TXT, MÁSCARAS, LGPD E WHATSAPP)
+         JAVASCRIPT INTERATIVO (CARROSSEL, 1ª LINHA VALORARRECADADO.TXT, MÁSCARAS, LGPD E WHATSAPP)
+         Build: v2026.11.25-2026
          ===================================================================== -->
     <script>
-        // Número de WhatsApp Oficial da Campanha (11 98207-6907)
+        const APP_BUILD_VERSION = 'v2026.11.25-2026';
         const WHATSAPP_NUMBER = '5511982076907';
         const META_TOTAL_CAMPANHA = 8250;
         const VALOR_POR_ELO = 250;
@@ -1422,6 +1477,7 @@
         const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
 
         function toggleMobileMenu(show) {
+            if (!mobileMenuOverlay) return;
             if (show) {
                 mobileMenuOverlay.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
@@ -1431,9 +1487,9 @@
             }
         }
 
-        mobileMenuBtn?.addEventListener('click', () => toggleMobileMenu(true));
-        closeMobileMenuBtn?.addEventListener('click', () => toggleMobileMenu(false));
-        mobileMenuBackdrop?.addEventListener('click', () => toggleMobileMenu(false));
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => toggleMobileMenu(true));
+        if (closeMobileMenuBtn) closeMobileMenuBtn.addEventListener('click', () => toggleMobileMenu(false));
+        if (mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', () => toggleMobileMenu(false));
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => toggleMobileMenu(false));
         });
@@ -1473,10 +1529,10 @@
             setHeroSlide(state.heroSlideIndex === 0 ? 1 : 0);
         }
 
-        // 3. Leitura do Valor Arrecadado via valorarrecadado.txt
-        function parseCurrencyValue(rawText) {
-            if (!rawText) return 0;
-            let cleaned = rawText.replace(/R\$/gi, '').replace(/\s+/g, '').trim();
+        // 3. Leitura Dinâmica Exclusiva da 1ª Linha de ./valorarrecadado.txt
+        function parseCurrencyValue(firstLineText) {
+            if (!firstLineText || typeof firstLineText !== 'string') return 0;
+            let cleaned = firstLineText.replace(/^\uFEFF/, '').replace(/R\$/gi, '').replace(/\s+/g, '').trim();
             if (!cleaned) return 0;
 
             if (cleaned.includes(',') && cleaned.includes('.')) {
@@ -1517,15 +1573,16 @@
 
         async function loadValorArrecadado() {
             try {
-                const response = await fetch('./valorarrecadado.txt?t=' + Date.now(), {
-                    cache: 'no-store'
-                });
+                const url = `./valorarrecadado.txt?v=${APP_BUILD_VERSION}&t=${Date.now()}`;
+                const response = await fetch(url, { cache: 'no-store' });
                 if (!response.ok) {
                     renderRaisedProgress(0);
                     return;
                 }
-                const text = await response.text();
-                const amount = parseCurrencyValue(text);
+                const rawText = await response.text();
+                // Extrai estritamente a PRIMEIRA LINHA do arquivo
+                const firstLine = (rawText.split(/\r?\n/)[0] || '').trim();
+                const amount = parseCurrencyValue(firstLine);
                 renderRaisedProgress(amount);
             } catch (error) {
                 renderRaisedProgress(0);
@@ -1539,63 +1596,88 @@
         const donorCpfInput = document.getElementById('donorCpfInput');
         const donorPhoneInput = document.getElementById('donorPhoneInput');
 
-        donorCepInput?.addEventListener('input', (e) => {
-            let v = e.target.value.replace(/\D/g, '').slice(0, 8);
-            if (v.length > 5) {
-                v = v.slice(0, 5) + '-' + v.slice(5);
-            }
-            e.target.value = v;
-            updateDonationMessage();
-        });
-
-        donorCpfInput?.addEventListener('input', (e) => {
-            let v = e.target.value.replace(/\D/g, '').slice(0, 11);
-            if (v.length > 9) {
-                v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
-            } else if (v.length > 6) {
-                v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
-            } else if (v.length > 3) {
-                v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-            }
-            e.target.value = v;
-            updateDonationMessage();
-        });
-
-        donorPhoneInput?.addEventListener('input', (e) => {
-            let digits = e.target.value.replace(/\D/g, '');
-            if (digits.startsWith('55') && digits.length > 2) {
-                digits = digits.slice(2);
-            }
-            digits = digits.slice(0, 11);
-
-            if (digits.length === 0) {
-                e.target.value = '';
-            } else if (digits.length <= 2) {
-                e.target.value = `+55 (${digits}`;
-            } else if (digits.length <= 7) {
-                e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2)}`;
-            } else {
-                e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
-            }
-            updateDonationMessage();
-        });
-
-        [donorNameInput, donorEmailInput].forEach(input => {
-            input?.addEventListener('input', updateDonationMessage);
-        });
-
-        // 5. Switch LGPD e Política de Privacidade
-        function toggleLgpdConsent() {
-            state.lgpdAccepted = !state.lgpdAccepted;
-            const btn = document.getElementById('lgpdSwitchBtn');
-            const knob = document.getElementById('lgpdSwitchKnob');
-            btn.setAttribute('aria-checked', state.lgpdAccepted ? 'true' : 'false');
-            knob.innerHTML = state.lgpdAccepted ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+        if (donorCepInput) {
+            donorCepInput.addEventListener('input', (e) => {
+                let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+                if (v.length > 5) {
+                    v = v.slice(0, 5) + '-' + v.slice(5);
+                }
+                e.target.value = v;
+                updateDonationMessage();
+            });
         }
 
-        function togglePrivacyPolicyText() {
-            const box = document.getElementById('privacyPolicyBox');
-            box.classList.toggle('hidden');
+        if (donorCpfInput) {
+            donorCpfInput.addEventListener('input', (e) => {
+                let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+                if (v.length > 9) {
+                    v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+                } else if (v.length > 6) {
+                    v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+                } else if (v.length > 3) {
+                    v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+                }
+                e.target.value = v;
+                updateDonationMessage();
+            });
+        }
+
+        if (donorPhoneInput) {
+            donorPhoneInput.addEventListener('input', (e) => {
+                let digits = e.target.value.replace(/\D/g, '');
+                if (digits.startsWith('55') && digits.length > 2) {
+                    digits = digits.slice(2);
+                }
+                digits = digits.slice(0, 11);
+
+                if (digits.length === 0) {
+                    e.target.value = '';
+                } else if (digits.length <= 2) {
+                    e.target.value = `+55 (${digits}`;
+                } else if (digits.length <= 7) {
+                    e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2)}`;
+                } else {
+                    e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+                }
+                updateDonationMessage();
+            });
+        }
+
+        [donorNameInput, donorEmailInput].forEach(input => {
+            if (input) input.addEventListener('input', updateDonationMessage);
+        });
+
+        // 5. Switch LGPD e Modal de Política de Privacidade e Termos de Uso
+        function setLgpdConsent(accepted) {
+            state.lgpdAccepted = Boolean(accepted);
+            const btn = document.getElementById('lgpdSwitchBtn');
+            const knob = document.getElementById('lgpdSwitchKnob');
+            if (btn) btn.setAttribute('aria-checked', state.lgpdAccepted ? 'true' : 'false');
+            if (knob) knob.innerHTML = state.lgpdAccepted ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+        }
+
+        function toggleLgpdConsent() {
+            setLgpdConsent(!state.lgpdAccepted);
+        }
+
+        function openPrivacyModal() {
+            const modal = document.getElementById('privacyModal');
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closePrivacyModal() {
+            const modal = document.getElementById('privacyModal');
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function acceptPrivacyFromModal() {
+            setLgpdConsent(true);
+            closePrivacyModal();
+            showToast('Consentimento LGPD e Termos de Uso aceitos!', false);
         }
 
         // 6. Modal Interativo de Doação
@@ -1632,8 +1714,8 @@
             document.body.style.overflow = '';
         }
 
-        closeDonationModalBtn?.addEventListener('click', closeDonationModal);
-        donationModalBackdrop?.addEventListener('click', closeDonationModal);
+        if (closeDonationModalBtn) closeDonationModalBtn.addEventListener('click', closeDonationModal);
+        if (donationModalBackdrop) donationModalBackdrop.addEventListener('click', closeDonationModal);
 
         function setPaymentMode(mode) {
             state.paymentMode = mode;
@@ -1669,18 +1751,19 @@
         }
 
         function updateDonationMessage() {
-            const name = donorNameInput?.value.trim() || '[Nome Completo]';
-            const cpf = donorCpfInput?.value.trim() || '[CPF]';
-            const email = donorEmailInput?.value.trim() || '[E-mail]';
-            const phone = donorPhoneInput?.value.trim() || '[Celular]';
-            const cep = donorCepInput?.value.trim() || '[CEP]';
+            const name = donorNameInput && donorNameInput.value.trim() ? donorNameInput.value.trim() : '[Nome Completo]';
+            const cpf = donorCpfInput && donorCpfInput.value.trim() ? donorCpfInput.value.trim() : '[CPF]';
+            const email = donorEmailInput && donorEmailInput.value.trim() ? donorEmailInput.value.trim() : '[E-mail]';
+            const phone = donorPhoneInput && donorPhoneInput.value.trim() ? donorPhoneInput.value.trim() : '[Celular]';
+            const cep = donorCepInput && donorCepInput.value.trim() ? donorCepInput.value.trim() : '[CEP]';
             const ringLine = state.includesRing ? `\n• Tamanho do Aro: ${state.ringSize}` : '';
             const modeLine = state.paymentMode === 'avista'
                 ? `• Forma: Pix à Vista (${state.packageValue})`
                 : `• Forma: QUERO PARTICIPAR MAS VOU PARCELAR (Segue comprovante do sinal/entrada + programação de pagamento)`;
 
             const text = `Olá! Segue meu apoio à campanha "33 Elos para Coroar o Novo Templo" (Pintura da Abóboda — ARLS Loja da Luz, 1234):\n• Apoiador(a): ${name}\n• CPF: ${cpf} | Celular: ${phone}\n• E-mail: ${email} | CEP: ${cep}\n• Cota: ${state.packageTitle}${ringLine}\n${modeLine}`;
-            document.getElementById('donationMessagePreview').value = text;
+            const previewEl = document.getElementById('donationMessagePreview');
+            if (previewEl) previewEl.value = text;
         }
 
         // 7. Validação, Cópia e Abertura do WhatsApp Oficial (11 98207-6907)
@@ -1736,6 +1819,8 @@
             const toast = document.getElementById('toastNotification');
             const textEl = document.getElementById('toastMessageText');
             const iconEl = document.getElementById('toastIcon');
+            if (!toast || !textEl || !iconEl) return;
+
             textEl.textContent = msg;
             iconEl.className = isWarning ? 'fas fa-exclamation-triangle text-amber-400' : 'fas fa-check-circle text-[#e8cfa0]';
             toast.classList.remove('hidden');
@@ -1748,7 +1833,7 @@
             }, 3500);
         }
 
-        // Inicializa leitura do arquivo valorarrecadado.txt ao carregar a página
+        // Inicializa leitura da 1ª linha de valorarrecadado.txt ao carregar a página
         document.addEventListener('DOMContentLoaded', loadValorArrecadado);
     </script>
 </body>
