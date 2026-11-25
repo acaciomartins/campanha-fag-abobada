@@ -1,0 +1,1710 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33 Elos para Coroar o Novo Templo — ARLS Loja da Luz, 1234</title>
+    <meta name="description" content="Campanha de arrecadação 100% revertida para a Pintura da Abóboda do Novo Templo da ARLS Loja da Luz, 1234.">
+
+    <!-- Google Fonts: Space Grotesk, Sora & Cinzel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* =====================================================================
+           DESIGN TOKENS & PALETA AURA (PERGAMINHO QUENTE + AZUL MARINHO + BRONZE)
+           ===================================================================== */
+        :root {
+            --event-color-button: #13213f;
+            --event-color-highlight: #13213f;
+            --aura-ink: #161a26;
+            --aura-heading: #18263f;
+            --aura-muted: #50637f;
+            --aura-bronze: #b39158;
+            --aura-gold: #d1b171;
+            --aura-paper: #fbf6ef;
+            --aura-paper-deep: #f3ecde;
+            --aura-border: rgba(179, 145, 88, 0.24);
+            --aura-shadow: 0 24px 60px rgba(10, 14, 24, 0.09);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body.aura-template {
+            margin: 0;
+            background:
+                radial-gradient(circle at top left, rgba(205, 166, 94, 0.18), transparent 34%),
+                radial-gradient(circle at 88% 12%, rgba(19, 33, 63, 0.08), transparent 28%),
+                linear-gradient(180deg, #fbf6ef 0%, #f3ecde 52%, #f8f4ec 100%);
+            color: var(--aura-ink);
+            font-family: 'Sora', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.03em;
+        }
+
+        .font-serif-cert {
+            font-family: 'Cinzel', Georgia, serif;
+        }
+
+        .aura-container {
+            width: min(1180px, calc(100vw - 32px));
+            margin: 0 auto;
+        }
+
+        /* =====================================================================
+           CABEÇALHO FLUTUANTE (NAVBAR VIDRO FOSCO)
+           ===================================================================== */
+        .aura-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            padding: 16px 0;
+        }
+
+        .aura-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 14px 24px;
+            border-radius: 28px;
+            background: rgba(9, 11, 18, 0.82);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(209, 177, 113, 0.22);
+            box-shadow: 0 22px 55px rgba(7, 9, 14, 0.25);
+        }
+
+        .aura-nav__list {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .aura-nav__list a {
+            color: rgba(255, 247, 232, 0.92);
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .aura-nav__list a:hover {
+            color: var(--aura-gold);
+        }
+
+        /* Botões Padrão AURA */
+        .aura-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 48px;
+            padding: 0 24px;
+            border-radius: 999px;
+            border: 1px solid rgba(209, 177, 113, 0.28);
+            background: linear-gradient(135deg, #13213f, #1f3564);
+            color: #ffffff !important;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.16);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .aura-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 22px 40px rgba(15, 23, 42, 0.24);
+        }
+
+        .aura-button--gold {
+            background: linear-gradient(135deg, #c69f59, #9f7a38);
+            border-color: rgba(255, 244, 219, 0.35);
+            color: #0e131f !important;
+        }
+
+        .aura-button--secondary {
+            background: rgba(251, 246, 239, 0.95);
+            border-color: rgba(179, 145, 88, 0.32);
+            color: #18263f !important;
+            box-shadow: none;
+        }
+
+        .aura-button--whatsapp {
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            border-color: rgba(134, 239, 172, 0.35);
+            color: #ffffff !important;
+        }
+
+        .aura-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: rgba(248, 242, 231, 0.95);
+            border: 1px solid rgba(211, 180, 117, 0.42);
+            color: #13213f;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        /* =====================================================================
+           SEÇÃO 1: HERO EM 2 COLUNAS
+           ===================================================================== */
+        .aura-hero {
+            position: relative;
+            margin-top: -92px;
+            padding: 132px 0 84px;
+            border-radius: 0 0 46px 46px;
+            background:
+                linear-gradient(140deg, rgba(9, 13, 24, 0.94), rgba(19, 33, 63, 0.90)),
+                radial-gradient(circle at top right, rgba(209, 177, 113, 0.28), transparent 40%);
+            overflow: hidden;
+        }
+
+        .aura-hero__grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .aura-hero__content,
+        .aura-hero__visual {
+            border-radius: 34px;
+            padding: 34px;
+            background: linear-gradient(180deg, rgba(12, 15, 26, 0.72), rgba(22, 31, 54, 0.65));
+            border: 1px solid rgba(209, 177, 113, 0.24);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 28px 80px rgba(7, 9, 14, 0.28);
+        }
+
+        .aura-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 15px;
+            border-radius: 999px;
+            background: rgba(236, 220, 191, 0.13);
+            border: 1px solid rgba(214, 177, 108, 0.24);
+            color: #fff8eb;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .aura-hero__visual-card {
+            border-radius: 26px;
+            padding: 22px;
+            background: linear-gradient(180deg, rgba(251, 246, 239, 0.98), rgba(241, 231, 212, 0.95));
+            border: 1px solid rgba(207, 175, 109, 0.3);
+            box-shadow: 0 20px 50px rgba(7, 9, 14, 0.22);
+        }
+
+        /* =====================================================================
+           CARDS PERGAMINHO & PRICING CARDS (SEÇÃO AZUL MARINHO #13213f)
+           ===================================================================== */
+        .aura-card {
+            background: linear-gradient(180deg, rgba(252, 248, 241, 0.98), rgba(246, 238, 225, 0.95));
+            border: 1px solid var(--aura-border);
+            border-radius: 28px;
+            box-shadow: var(--aura-shadow);
+            padding: 30px;
+        }
+
+        .aura-pricing-section {
+            position: relative;
+            background-color: #13213f;
+            background-image:
+                radial-gradient(circle at 15% 15%, rgba(209, 177, 113, 0.12), transparent 35%),
+                radial-gradient(circle at 85% 85%, rgba(51, 79, 130, 0.35), transparent 40%),
+                linear-gradient(180deg, #13213f 0%, #0e182e 100%);
+            padding: 92px 0;
+        }
+
+        .aura-pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .aura-price-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 30px;
+            background: linear-gradient(180deg, rgba(252, 248, 241, 0.99), rgba(244, 235, 220, 0.97));
+            border: 1px solid rgba(179, 145, 88, 0.26);
+            box-shadow: 0 28px 80px rgba(7, 11, 22, 0.25);
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+
+        .aura-price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 34px 90px rgba(7, 11, 22, 0.35);
+        }
+
+        .aura-price-card__tag {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            padding: 7px 13px;
+            border-radius: 999px;
+            background: rgba(179, 145, 88, 0.16);
+            color: #13213f;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .aura-price-card h3 {
+            margin: 16px 0 0;
+            color: var(--aura-ink);
+            font-size: clamp(24px, 2.6vw, 31px);
+            font-weight: 700;
+            line-height: 1.08;
+        }
+
+        .aura-price-card__media {
+            width: min(195px, 100%);
+            aspect-ratio: 1 / 1;
+            margin: 22px auto 6px;
+            overflow: hidden;
+            border-radius: 26px;
+            background: linear-gradient(180deg, rgba(255, 252, 247, 0.98), rgba(238, 226, 205, 0.95));
+            border: 1px solid rgba(179, 145, 88, 0.24);
+            box-shadow: 0 16px 40px rgba(10, 14, 24, 0.09);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+        }
+
+        .aura-price-card__value {
+            margin: 18px 0 4px;
+            color: var(--aura-ink);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(34px, 3.6vw, 48px);
+            font-weight: 700;
+            line-height: 0.98;
+        }
+
+        .aura-price-card__footer {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(179, 145, 88, 0.22);
+        }
+
+        /* =====================================================================
+           FORMULÁRIO ESTILO AURA / SIS333 (MODAL QUERO DOAR - ANEXO)
+           ===================================================================== */
+        .sis-form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 6px;
+            font-family: 'Sora', sans-serif;
+        }
+
+        .sis-form-label .req {
+            color: #e11d48;
+            margin-left: 2px;
+        }
+
+        .sis-form-input {
+            width: 100%;
+            height: 46px;
+            padding: 0 16px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            color: #1e293b;
+            font-size: 14px;
+            font-family: 'Sora', sans-serif;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .sis-form-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .sis-form-input:focus {
+            outline: none;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+        }
+
+        /* Switch LGPD idêntico ao anexo */
+        .lgpd-switch-btn {
+            position: relative;
+            width: 52px;
+            height: 28px;
+            border-radius: 999px;
+            background-color: #e2e8f0;
+            border: none;
+            padding: 3px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+            flex-shrink: 0;
+        }
+
+        .lgpd-switch-btn[aria-checked="true"] {
+            background-color: #13213f;
+        }
+
+        .lgpd-switch-knob {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            background-color: #ffffff;
+            color: #64748b;
+            font-size: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+            transition: transform 0.25s ease, color 0.25s ease;
+        }
+
+        .lgpd-switch-btn[aria-checked="true"] .lgpd-switch-knob {
+            transform: translateX(24px);
+            color: #13213f;
+        }
+
+        /* =====================================================================
+           RODAPÉ INSTITUCIONAL AURA
+           ===================================================================== */
+        .aura-footer {
+            margin-top: 84px;
+            padding: 76px 0 36px;
+            border-radius: 42px 42px 0 0;
+            background:
+                linear-gradient(145deg, rgba(9, 12, 20, 0.96), rgba(19, 33, 63, 0.94));
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .aura-footer__panel {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+            gap: 24px;
+        }
+
+        .aura-footer__brand,
+        .aura-footer__meta {
+            padding: 30px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(209, 177, 113, 0.2);
+            backdrop-filter: blur(12px);
+        }
+
+        .aura-footer__bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.14);
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.74);
+        }
+
+        /* =====================================================================
+           RESPONSIVIDADE
+           ===================================================================== */
+        @media (max-width: 1024px) {
+            .aura-hero__grid,
+            .aura-footer__panel {
+                grid-template-columns: 1fr;
+            }
+            .aura-pricing-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767px) {
+            .aura-nav__list,
+            .aura-nav__desktop-cta {
+                display: none;
+            }
+            .aura-pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .aura-hero__content,
+            .aura-hero__visual,
+            .aura-card,
+            .aura-price-card {
+                padding: 22px;
+            }
+            .aura-hero {
+                border-radius: 0 0 32px 32px;
+                padding-top: 118px;
+                padding-bottom: 60px;
+            }
+        }
+    </style>
+</head>
+<body class="aura-template">
+
+    <!-- =====================================================================
+         CABEÇALHO FLUTUANTE (NAVBAR VIDRO FOSCO)
+         ===================================================================== -->
+    <header class="aura-header">
+        <div class="aura-container">
+            <div class="aura-nav">
+                <!-- Brasão / Identificação -->
+                <a href="#inicio" class="flex items-center gap-3 text-decoration-none group">
+                    <div class="w-11 h-11 rounded-2xl flex items-center justify-center border border-[#d1b171]/40 bg-[#13213f] text-[#e8cfa0] shadow-inner">
+                        <svg class="w-6 h-6" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M32 10L14 48M32 10L50 48"/>
+                            <path d="M12 34L32 54L52 34"/>
+                            <text x="32" y="39" text-anchor="middle" font-size="15" font-weight="700" stroke="none" fill="currentColor" font-family="Cinzel, serif">G</text>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-[0.18em] text-[#d1b171] font-semibold">Campanha Oficial</span>
+                        <span class="block text-base sm:text-lg font-bold text-[#fff8eb] font-display leading-tight">ARLS Loja da Luz, 1234</span>
+                    </div>
+                </a>
+
+                <!-- Links Desktop -->
+                <nav class="hidden md:block" aria-label="Principal">
+                    <ul class="aura-nav__list">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#simbolo">Símbolo da Obra</a></li>
+                        <li><a href="#certificado">Certificado</a></li>
+                        <li><a href="#doacao">Faça sua Doação</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Ações -->
+                <div class="flex items-center gap-3">
+                    <a href="#doacao" class="aura-button aura-button--gold aura-nav__desktop-cta">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Quero Doar</span>
+                    </a>
+                    <button type="button" id="mobileMenuBtn" class="md:hidden w-11 h-11 rounded-2xl bg-white/10 border border-[#d1b171]/30 text-[#fff8eb] flex items-center justify-center" aria-label="Abrir Menu">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Drawer -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 z-50 hidden">
+        <div id="mobileMenuBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div class="relative ml-auto w-80 max-w-[88vw] h-full bg-[#fbf6ef] p-6 shadow-2xl flex flex-col justify-between border-l border-[#b39158]/30">
+            <div>
+                <div class="flex items-center justify-between pb-5 border-b border-[#b39158]/20">
+                    <span class="font-display font-bold text-lg text-[#13213f]">ARLS Loja da Luz, 1234</span>
+                    <button type="button" id="closeMobileMenuBtn" class="w-10 h-10 rounded-xl bg-[#13213f]/10 text-[#13213f] flex items-center justify-center">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="mt-6 space-y-4 text-base font-semibold text-[#18263f]">
+                    <li><a href="#inicio" class="mobile-nav-link block py-2 border-b border-[#b39158]/15">Início</a></li>
+                    <li><a href="#simbolo" class="mobile-nav-link block py-2 border-b border-[#b39158]/15">Símbolo da Obra</a></li>
+                    <li><a href="#certificado" class="mobile-nav-link block py-2 border-b border-[#b39158]/15">Certificado</a></li>
+                    <li><a href="#doacao" class="mobile-nav-link block py-2 border-b border-[#b39158]/15">Faça sua Doação</a></li>
+                </ul>
+            </div>
+            <a href="#doacao" class="mobile-nav-link aura-button w-full justify-center">
+                <i class="fas fa-hand-holding-heart"></i>
+                <span>Quero Doar</span>
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <!-- =====================================================================
+             SEÇÃO 1 (#inicio): 33 ELOS PARA COROAR O NOVO TEMPLO
+             ===================================================================== -->
+        <section id="inicio" class="aura-hero">
+            <div class="aura-container">
+                <div class="aura-hero__grid">
+                    
+                    <!-- Painel Esquerdo: Narrativa + Meta R$ 8.250,00 -->
+                    <div class="aura-hero__content flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-2.5 mb-5">
+                                <span class="aura-chip">
+                                    <i class="fas fa-landmark text-[#d1b171]"></i>
+                                    ARLS Loja da Luz, 1234
+                                </span>
+                                <span class="aura-chip">
+                                    <i class="fas fa-paint-roller text-[#d1b171]"></i>
+                                    100% Direto para a Pintura da Abóboda
+                                </span>
+                            </div>
+
+                            <span class="aura-kicker mb-4">Edição Limitada • 33 Elos</span>
+
+                            <h1 class="text-white font-display font-bold text-4xl sm:text-5xl lg:text-[54px] leading-[1.03] mb-5">
+                                33 Elos para Coroar o Novo Templo
+                            </h1>
+
+                            <p class="text-white/85 text-base sm:text-lg leading-relaxed mb-6">
+                                Chegamos a uma etapa histórica da construção do nosso Novo Templo: a <strong class="text-[#e8cfa0]">Pintura da Abóboda</strong>. Para alcançar nossa meta de <strong class="text-white">R$ 8.250,00</strong>, preparamos uma edição única e limitada de <strong class="text-white">33 anéis numerados</strong> já integralmente patrocinados.
+                            </p>
+                        </div>
+
+                        <!-- Barra de Progresso Interativa -->
+                        <div class="rounded-2xl p-5 bg-white/10 border border-[#d1b171]/25 mb-6">
+                            <div class="flex flex-wrap items-end justify-between gap-2 mb-2">
+                                <div>
+                                    <span class="block text-xs uppercase tracking-wider text-[#e8cfa0] font-semibold">Meta da Pintura da Abóboda</span>
+                                    <span class="text-2xl sm:text-3xl font-display font-bold text-white" id="heroRaisedValue">R$ 4.500,00</span>
+                                    <span class="text-sm text-white/70"> de R$ 8.250,00</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="inline-block px-3 py-1 rounded-full bg-[#d1b171]/20 text-[#e8cfa0] text-xs font-bold" id="heroElosCount">
+                                        18 de 33 Elos Garantidos (55%)
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="w-full h-3.5 rounded-full bg-black/40 overflow-hidden p-0.5 border border-white/10">
+                                <div id="heroProgressBar" class="h-full rounded-full bg-gradient-to-r from-[#b39158] via-[#d1b171] to-[#f3dcab] transition-all duration-500" style="width: 54.5%;"></div>
+                            </div>
+
+                            <div class="flex flex-wrap items-center justify-between gap-2 mt-3 text-xs text-white/70">
+                                <span>33 unidades numeradas em bronze com acabamento prateado</span>
+                                <div class="flex items-center gap-2">
+                                    <label for="simuladorElos" class="text-[#e8cfa0]">Simular elos:</label>
+                                    <input id="simuladorElos" type="range" min="0" max="33" value="18" class="w-24 accent-[#d1b171] cursor-pointer">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3">
+                            <a href="#doacao" class="aura-button aura-button--gold">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </a>
+                            <a href="#certificado" class="aura-button aura-button--secondary">
+                                <i class="fas fa-scroll"></i>
+                                <span>Ver Certificado</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Painel Direito: Vitrine / Carrossel da Joia & Certificado -->
+                    <div class="aura-hero__visual flex flex-col justify-between">
+                        <div class="aura-hero__visual-card flex-1 flex flex-col items-center justify-between text-center">
+                            <div class="w-full flex items-center justify-between gap-2 mb-3">
+                                <span class="inline-block px-3 py-1 rounded-full bg-[#13213f]/10 text-[#13213f] text-[11px] font-bold uppercase tracking-wider" id="heroSlideBadge">
+                                    Peça Comemorativa • Série 01 a 33
+                                </span>
+                                <div class="flex items-center gap-1.5">
+                                    <button type="button" onclick="setHeroSlide(0)" id="heroDot0" class="w-6 h-2 rounded-full bg-[#13213f] transition-all cursor-pointer" aria-label="Ver Joia"></button>
+                                    <button type="button" onclick="setHeroSlide(1)" id="heroDot1" class="w-2.5 h-2 rounded-full bg-[#13213f]/30 transition-all cursor-pointer" aria-label="Ver Certificado"></button>
+                                </div>
+                            </div>
+
+                            <!-- Slide 0: Joia 33 Elos -->
+                            <div id="heroSlide0" class="w-full h-64 sm:h-72 rounded-2xl bg-gradient-to-b from-[#171b26] to-[#0c0e14] border border-[#b39158]/30 flex items-center justify-center p-4 overflow-hidden relative shadow-inner">
+                                <img src="assets/img/aneis.jpg" alt="Anel Comemorativo 33 Elos" class="w-full h-full object-contain rounded-xl" onerror="this.style.display='none'; document.getElementById('heroRingFallback').style.display='flex';">
+                                
+                                <!-- Fallback SVG 3D do Anel Maçônico em Bronze/Prata -->
+                                <div id="heroRingFallback" style="display: none;" class="w-full h-full flex-col items-center justify-center">
+                                    <svg viewBox="0 0 360 220" class="w-full h-full max-h-56">
+                                        <defs>
+                                            <radialGradient id="heroSilverMetal" cx="40%" cy="35%" r="65%">
+                                                <stop offset="0%" stop-color="#ffffff"/>
+                                                <stop offset="35%" stop-color="#d5dae2"/>
+                                                <stop offset="75%" stop-color="#8b93a1"/>
+                                                <stop offset="100%" stop-color="#4e5563"/>
+                                            </radialGradient>
+                                            <linearGradient id="heroRingBand" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#5a616e"/>
+                                                <stop offset="50%" stop-color="#e3e7ed"/>
+                                                <stop offset="100%" stop-color="#5a616e"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Aro Lateral Esquerdo ("FA") -->
+                                        <g transform="translate(22, 34)">
+                                            <path d="M15,25 Q45,12 75,25 L66,132 Q45,144 24,132 Z" fill="url(#heroRingBand)" stroke="#3e4450" stroke-width="2"/>
+                                            <polygon points="45,42 25,74 45,106 65,74" fill="none" stroke="#2d323c" stroke-width="2.5"/>
+                                            <rect x="31" y="61" width="28" height="22" rx="2" fill="#eef1f5" stroke="#2d323c" stroke-width="1.5"/>
+                                            <text x="45" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#1e222b" font-family="Cinzel, serif">FA</text>
+                                            <text x="45" y="156" text-anchor="middle" font-size="9" fill="#d1b171" font-family="Sora, sans-serif">Lateral Esquerda</text>
+                                        </g>
+
+                                        <!-- Selo Central do Anel -->
+                                        <g transform="translate(180, 102)">
+                                            <ellipse cx="0" cy="4" rx="68" ry="72" fill="#2b303a"/>
+                                            <circle cx="0" cy="0" r="66" fill="url(#heroSilverMetal)" stroke="#474e5c" stroke-width="3"/>
+                                            <circle cx="0" cy="0" r="57" fill="none" stroke="#363c47" stroke-width="1.5"/>
+                                            <circle cx="0" cy="0" r="43" fill="none" stroke="#363c47" stroke-width="1.2"/>
+                                            <!-- Esquadro e Compasso -->
+                                            <path d="M0,-33 L-21,12 M0,-33 L21,12" stroke="#232830" stroke-width="3.2" stroke-linecap="round"/>
+                                            <path d="M-24,-2 L0,21 L24,-2" fill="none" stroke="#232830" stroke-width="3.2" stroke-linecap="round"/>
+                                            <text x="0" y="2" text-anchor="middle" font-size="16" font-weight="700" fill="#1b1f26" font-family="Cinzel, serif">G</text>
+                                            <!-- Coluna Jônica -->
+                                            <rect x="-15" y="21" width="30" height="5" rx="2" fill="#464d59"/>
+                                            <rect x="-10" y="26" width="20" height="11" fill="#5e6675"/>
+                                            <text x="0" y="84" text-anchor="middle" font-size="9.5" font-weight="600" fill="#e8cfa0" font-family="Sora, sans-serif">Bronze Forjado &amp; Prata</text>
+                                        </g>
+
+                                        <!-- Aro Lateral Direito ("LATOMUS 33 ADEDIFICANS") -->
+                                        <g transform="translate(263, 34)">
+                                            <path d="M15,25 Q45,12 75,25 L66,132 Q45,144 24,132 Z" fill="url(#heroRingBand)" stroke="#3e4450" stroke-width="2"/>
+                                            <text x="45" y="62" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1e222b" font-family="Space Grotesk, sans-serif">LATOMUS</text>
+                                            <text x="45" y="81" text-anchor="middle" font-size="16" font-weight="700" fill="#13213f" font-family="Space Grotesk, sans-serif">33</text>
+                                            <text x="45" y="97" text-anchor="middle" font-size="7.2" font-weight="700" fill="#1e222b" font-family="Space Grotesk, sans-serif">ADEDIFICANS</text>
+                                            <text x="45" y="156" text-anchor="middle" font-size="9" fill="#d1b171" font-family="Sora, sans-serif">Lateral Direita</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Slide 1: Miniatura do Certificado -->
+                            <div id="heroSlide1" class="hidden w-full h-64 sm:h-72 rounded-2xl bg-[#fcfaf4] border-2 border-[#13213f]/25 p-4 flex-col items-center justify-center overflow-hidden relative shadow-inner">
+                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg" alt="Certificado Oficial 33 Elos" class="w-full h-full object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('heroCertFallback').style.display='flex';">
+                                <div id="heroCertFallback" style="display: none;" class="w-full h-full border border-[#b39158]/60 p-4 flex-col items-center justify-center text-center bg-[#fcfaf5]">
+                                    <span class="px-2.5 py-0.5 border border-[#13213f]/35 text-[8.5px] font-bold tracking-[0.15em] uppercase text-[#13213f]">
+                                        EDIÇÃO HISTÓRICA • Nº 01 / 33
+                                    </span>
+                                    <h4 class="font-serif-cert text-sm font-bold text-[#13213f] mt-2">CERTIFICADO DE APOIO E FUNDAÇÃO</h4>
+                                    <p class="text-[9px] font-bold uppercase tracking-wider text-[#50637f]">PINTURA DA ABÓBODA — NOVO TEMPLO</p>
+                                    <p class="text-[10px] text-[#18263f] mt-2.5 max-w-xs leading-relaxed">
+                                        Reconhecimento perpétuo ao guardião(ã) de um dos <strong>33 Elos Históricos</strong> em bronze com acabamento prateado.
+                                    </p>
+                                    <span class="mt-3 text-[9px] font-semibold text-[#9f7a38]">ARLS Loja da Luz, 1234</span>
+                                </div>
+                            </div>
+
+                            <div class="w-full flex items-center justify-between gap-2 mt-3.5">
+                                <p class="text-xs font-semibold text-[#18263f] text-left m-0" id="heroSlideCaption">
+                                    Base em bronze forjado com acabamento prateado • Acompanha Certificado de Apoio
+                                </p>
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <button type="button" onclick="toggleHeroSlide()" class="w-8 h-8 rounded-full bg-[#13213f]/10 hover:bg-[#13213f] hover:text-white text-[#13213f] flex items-center justify-center transition cursor-pointer" aria-label="Alternar visual">
+                                        <i class="fas fa-chevron-right text-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Destaque da Meta -->
+                        <div class="mt-4 rounded-2xl p-4 bg-[#fbf6ef]/95 border border-[#d1b171]/35 flex items-center justify-between gap-3">
+                            <div>
+                                <span class="block text-[11px] font-bold uppercase tracking-wider text-[#9f7a38]">Meta Integral: R$ 8.250,00</span>
+                                <span class="text-sm font-bold text-[#13213f]">Peças já patrocinadas: 100% vai direto para a Pintura da Abóboda</span>
+                            </div>
+                            <span class="w-10 h-10 rounded-xl bg-[#13213f] text-[#e8cfa0] flex items-center justify-center shrink-0">
+                                <i class="fas fa-check-double"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             SEÇÃO 2 (#simbolo): SÍMBOLO PERPÉTUO DA OBRA
+             ===================================================================== -->
+        <section id="simbolo" class="py-20 sm:py-24">
+            <div class="aura-container">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="aura-kicker mb-3">Propósito &amp; Transparência</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-[#18263f]">
+                        Símbolo Perpétuo da Obra
+                    </h2>
+                    <p class="mt-4 text-base sm:text-lg text-[#50637f] leading-relaxed">
+                        Assim como a abóboda celeste coroa e protege os trabalhos do Templo, cada um dos 33 Elos representa a união fraterna que torna possível concluir essa etapa histórica da ARLS Loja da Luz, 1234.
+                    </p>
+                </div>
+
+                <!-- 3 Pilares da Campanha -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Pilar 1 -->
+                    <article class="aura-card flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#13213f] text-[#e8cfa0] flex items-center justify-center text-xl mb-5 shadow-md">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <span class="block text-xs font-bold uppercase tracking-wider text-[#9f7a38] mb-1">Transparência Total</span>
+                            <h3 class="text-2xl font-display font-bold text-[#18263f] mb-3">
+                                100% Destinado à Abóboda
+                            </h3>
+                            <p class="text-sm text-[#50637f] leading-relaxed">
+                                Todas as peças desta série foram integralmente patrocinadas. Isso garante que <strong>cada centavo da sua contribuição</strong> vá diretamente para o custeio da pintura e acabamento artístico da abóboda.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#b39158]/20 text-xs font-bold text-[#13213f]">
+                            Meta integral: R$ 8.250,00
+                        </div>
+                    </article>
+
+                    <!-- Pilar 2 -->
+                    <article class="aura-card flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#13213f] text-[#e8cfa0] flex items-center justify-center text-xl mb-5 shadow-md">
+                                <i class="fas fa-ring"></i>
+                            </div>
+                            <span class="block text-xs font-bold uppercase tracking-wider text-[#9f7a38] mb-1">Série Exclusiva</span>
+                            <h3 class="text-2xl font-display font-bold text-[#18263f] mb-3">
+                                Edição Numerada 01 a 33
+                            </h3>
+                            <p class="text-sm text-[#50637f] leading-relaxed">
+                                Apenas <strong>33 exemplares únicos</strong> forjados em bronze de alta resistência com nobre acabamento prateado, disponíveis nos aros <strong>M</strong> ou <strong>G</strong>, com gravação comemorativa em relevo.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#b39158]/20 text-xs font-bold text-[#13213f]">
+                            Tiragem estritamente limitada
+                        </div>
+                    </article>
+
+                    <!-- Pilar 3 -->
+                    <article class="aura-card flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#13213f] text-[#e8cfa0] flex items-center justify-center text-xl mb-5 shadow-md">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <span class="block text-xs font-bold uppercase tracking-wider text-[#9f7a38] mb-1">Memória Viva</span>
+                            <h3 class="text-2xl font-display font-bold text-[#18263f] mb-3">
+                                Legado Histórico da Loja
+                            </h3>
+                            <p class="text-sm text-[#50637f] leading-relaxed">
+                                Cada guardião recebe o <strong>Certificado de Apoio e Fundação</strong> assinado pela Comissão de Obras, registrando para as futuras gerações seu compromisso com a luz, a harmonia e a edificação do Novo Templo.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-[#b39158]/20 text-xs font-bold text-[#13213f]">
+                            Registro perpétuo de apoio
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             SEÇÃO 3 (#certificado): CERTIFICADO DE AUTENTICIDADE E APOIO
+             ===================================================================== -->
+        <section id="certificado" class="pb-20 sm:pb-24">
+            <div class="aura-container">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="aura-kicker mb-3">Documento Oficial da Edição Comemorativa</span>
+                    <h2 class="text-3xl sm:text-5xl font-display font-bold text-[#18263f]">
+                        Certificado de Autenticidade e Apoio
+                    </h2>
+                    <p class="mt-4 text-base sm:text-lg text-[#50637f] leading-relaxed">
+                        Cada exemplar numerado acompanha o registro oficial de apoio à Pintura da Abóboda, perpetuando o nome do guardião na história do Novo Templo.
+                    </p>
+                </div>
+
+                <!-- Card Único Centralizado -->
+                <div class="max-w-3xl mx-auto">
+                    <div class="aura-card flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-11 h-11 rounded-2xl bg-[#13213f] text-[#e8cfa0] font-display font-bold text-lg flex items-center justify-center">
+                                        <i class="fas fa-award"></i>
+                                    </span>
+                                    <div>
+                                        <span class="block text-xs font-bold uppercase tracking-wider text-[#9f7a38]">Documento Oficial Nominal</span>
+                                        <h3 class="text-2xl font-display font-bold text-[#18263f]">Certificado de Apoio e Fundação</h3>
+                                    </div>
+                                </div>
+                                <span class="px-3.5 py-1 rounded-full bg-[#13213f]/10 text-[#13213f] text-xs font-bold">Exemplar Nº / 33</span>
+                            </div>
+
+                            <!-- Visualização Fiel do Certificado Oficial -->
+                            <div class="w-full min-h-[260px] rounded-2xl bg-[#fcfaf4] border-2 border-[#13213f]/30 p-3 sm:p-5 flex items-center justify-center overflow-hidden mb-6 shadow-inner">
+                                <img src="assets/img/certificado-de-apoio-e-fundacao.jpeg" alt="Certificado de Apoio e Fundação — Pintura da Abóboda" class="w-full max-h-72 object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('detailCertFallback').style.display='block';">
+                                
+                                <!-- Fallback HTML Fiel ao Certificado Oficial -->
+                                <div id="detailCertFallback" style="display: none;" class="w-full border border-[#b39158]/60 p-4 sm:p-6 text-center bg-[#fcfaf5]">
+                                    <span class="inline-block px-3 py-0.5 border border-[#13213f]/35 text-[9.5px] font-bold tracking-[0.16em] uppercase text-[#13213f]">
+                                        EDIÇÃO HISTÓRICA NUMERADA • EXEMPLAR Nº / 33
+                                    </span>
+
+                                    <h4 class="font-serif-cert text-base sm:text-xl font-bold text-[#13213f] mt-2 tracking-wide">
+                                        CERTIFICADO DE APOIO E FUNDAÇÃO
+                                    </h4>
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-[#50637f]">
+                                        NOVO TEMPLO — PINTURA DA ABÓBODA
+                                    </p>
+
+                                    <p class="text-[11px] italic text-[#50637f] mt-3">Certificamos que</p>
+
+                                    <div class="w-4/5 mx-auto my-1.5 py-1 border-b border-[#13213f]/75 text-[10px] font-bold tracking-widest uppercase text-[#50637f]">
+                                        [NOME DO DOADOR / APOIADOR(A)]
+                                    </div>
+
+                                    <p class="text-xs text-[#18263f] leading-relaxed mt-2.5 max-w-xl mx-auto">
+                                        Este anel forjado em <strong>bronze com acabamento prateado</strong> é o símbolo da sua contribuição direta para iluminar a abóboda do nosso Novo Templo, tornando-se guardião(ã) de um dos <strong>33 Elos Históricos</strong>.
+                                    </p>
+
+                                    <p class="text-[10.5px] italic text-[#50637f] mt-2.5 leading-snug max-w-xl mx-auto">
+                                        “Que este elo seja lembrança permanente da obra que ajudamos a erguer juntos, perpetuando o compromisso com a luz, a harmonia e a edificação deste espaço sagrado para as futuras gerações.”
+                                    </p>
+
+                                    <div class="mt-4 pt-3 border-t border-[#b39158]/35 flex flex-wrap justify-between gap-2 text-[10px] text-[#41536f] font-semibold">
+                                        <span>Comissão de Obras / ARLS Loja da Luz, 1234</span>
+                                        <span>Destinação: 100% Pintura da Abóboda</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Detalhes do Registro Perpétuo -->
+                            <ul class="space-y-3 text-sm text-[#41536f] mb-6">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-[#9f7a38] mt-1"></i>
+                                    <span><strong>Autenticidade Numerada:</strong> Cada certificado corresponde ao exemplar numerado (01 a 33) entregue ao guardião(ã) do elo.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fas fa-check-circle text-[#9f7a38] mt-1"></i>
+                                    <span><strong>Registro Histórico Nominal:</strong> Emitido pela Comissão de Obras e Administração da ARLS Loja da Luz, 1234 em reconhecimento à contribuição direta.</span>
+                                </li>
+                            </ul>
+
+                            <!-- Recomendações de Conservação da Peça -->
+                            <div class="p-4 rounded-2xl bg-[#13213f]/5 border border-[#b39158]/30 mb-6">
+                                <div class="flex items-center gap-2 text-[#13213f] font-bold text-xs uppercase tracking-wider mb-1">
+                                    <i class="fas fa-shield-alt text-[#9f7a38]"></i>
+                                    <span>Cuidados com a Peça</span>
+                                </div>
+                                <p class="text-xs text-[#50637f] leading-relaxed m-0">
+                                    Para preservar o brilho prateado, evite contato direto com perfumes, cremes, produtos químicos e água do mar ou piscina. Guarde em local seco.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-[#13213f]/5 border border-[#b39158]/30 flex flex-wrap items-center justify-between gap-3">
+                            <span class="text-xs font-semibold text-[#18263f]">
+                                Pronto para garantir seu Elo e receber seu Certificado oficial?
+                            </span>
+                            <a href="#doacao" class="px-5 py-2.5 rounded-full bg-[#13213f] text-white text-xs font-bold hover:bg-[#1f3564] transition shrink-0 text-decoration-none">
+                                Escolher Cota
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             SEÇÃO 4 (#doacao): FAÇA SUA DOAÇÃO (FUNDO AZUL MARINHO #13213f - ESTILO AURA)
+             ===================================================================== -->
+        <section id="doacao" class="aura-pricing-section">
+            <div class="aura-container">
+                <!-- Cabeçalho Centralizado -->
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="aura-kicker mb-4">Cotas e Pacotes de Apoio</span>
+                    <h2 class="text-white font-display font-bold text-3xl sm:text-5xl leading-tight">
+                        Faça sua Doação
+                    </h2>
+                    <p class="mt-4 text-base sm:text-lg text-white/80 leading-relaxed">
+                        Escolha sua cota de contribuição para a Pintura da Abóboda — 100% revertido para a obra da ARLS Loja da Luz, 1234
+                    </p>
+                </div>
+
+                <!-- Grade 3 Colunas de Cards Verticais em Pergaminho -->
+                <div class="aura-pricing-grid">
+
+                    <!-- CARD 1: QUALQUER VALOR — Apoio Livre -->
+                    <article class="aura-price-card">
+                        <span class="aura-price-card__tag">Qualquer Valor</span>
+                        <h3>Apoio Livre</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <defs>
+                                    <linearGradient id="goldEmblem" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#e8cfa0"/>
+                                        <stop offset="50%" stop-color="#b39158"/>
+                                        <stop offset="100%" stop-color="#7c5d28"/>
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="80,14 142,126 18,126" fill="none" stroke="url(#goldEmblem)" stroke-width="6" stroke-linejoin="round"/>
+                                <circle cx="80" cy="86" r="30" fill="#13213f" stroke="url(#goldEmblem)" stroke-width="3"/>
+                                <path d="M80,68 L68,94 M80,68 L92,94 M67,85 L80,98 L93,85" fill="none" stroke="#e8cfa0" stroke-width="2.5" stroke-linecap="round"/>
+                                <text x="80" y="146" text-anchor="middle" font-size="11" font-weight="700" fill="#13213f" font-family="Space Grotesk, sans-serif">LOJA DA LUZ 1234</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">R$ 50</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Ou qualquer valor livre</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Contribuição direta via Pix • 100% Pintura da Abóboda
+                            </p>
+                            <button type="button" onclick="openDonationModal('Apoio Livre', 'R$ 50 (ou valor livre)', 'avista', false)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 2: EDIÇÃO LIMITADA (33 ELOS) — Anel 33 Elos + Certificado -->
+                    <article class="aura-price-card ring-2 ring-[#d1b171]">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="aura-price-card__tag">Edição Limitada (33 Elos)</span>
+                            <span class="text-[11px] font-bold text-[#9f7a38] uppercase">Destaque</span>
+                        </div>
+                        <h3>Anel 33 Elos + Certificado</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <defs>
+                                    <radialGradient id="cardRingSilver" cx="38%" cy="35%" r="65%">
+                                        <stop offset="0%" stop-color="#ffffff"/>
+                                        <stop offset="45%" stop-color="#cfd5df"/>
+                                        <stop offset="85%" stop-color="#7c8494"/>
+                                        <stop offset="100%" stop-color="#434a57"/>
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="62" fill="url(#cardRingSilver)" stroke="#3e4552" stroke-width="4"/>
+                                <circle cx="80" cy="80" r="52" fill="none" stroke="#2c313b" stroke-width="1.8" stroke-dasharray="4 3"/>
+                                <circle cx="80" cy="80" r="42" fill="none" stroke="#2c313b" stroke-width="1.5"/>
+                                <path d="M80,48 L58,92 M80,48 L102,92" stroke="#18202c" stroke-width="3.5" stroke-linecap="round"/>
+                                <path d="M55,78 L80,103 L105,78" fill="none" stroke="#18202c" stroke-width="3.5" stroke-linecap="round"/>
+                                <text x="80" y="83" text-anchor="middle" font-size="18" font-weight="700" fill="#13213f" font-family="Cinzel, serif">G</text>
+                                <text x="80" y="114" text-anchor="middle" font-size="9.5" font-weight="700" fill="#13213f" font-family="Space Grotesk, sans-serif">33 ELOS</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">R$ 250</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Cota única à vista • Aro M ou G</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Pagamento via Pix • Inclui Anel Numerado + Certificado
+                            </p>
+                            <button type="button" onclick="openDonationModal('Anel 33 Elos + Certificado', 'R$ 250,00', 'avista', true)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 3: FLEXÍVEL — Anel 33 Elos Parcelado -->
+                    <article class="aura-price-card">
+                        <span class="aura-price-card__tag">Flexível</span>
+                        <h3>Anel 33 Elos Parcelado</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <circle cx="80" cy="80" r="60" fill="#13213f" stroke="#b39158" stroke-width="4"/>
+                                <circle cx="80" cy="80" r="50" fill="none" stroke="#d1b171" stroke-width="1.5" stroke-dasharray="5 4"/>
+                                <path d="M52,82 A28,28 0 1,1 108,82" fill="none" stroke="#e8cfa0" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M108,78 A28,28 0 1,1 52,78" fill="none" stroke="#b39158" stroke-width="4" stroke-linecap="round"/>
+                                <text x="80" y="85" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff" font-family="Space Grotesk, sans-serif">33</text>
+                                <text x="80" y="102" text-anchor="middle" font-size="8.5" font-weight="600" fill="#e8cfa0" font-family="Sora, sans-serif">SINAL + PARCELAS</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">Sinal</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Entrada + programação de pagamento</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Deposite o sinal via Pix e envie sua programação de pagamento
+                            </p>
+                            <button type="button" onclick="openDonationModal('Anel 33 Elos Parcelado', 'Sinal (Entrada) + Parcelas', 'parcelado', true)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 4: O ALICERCE — Membro Construtor Bronze -->
+                    <article class="aura-price-card">
+                        <span class="aura-price-card__tag">O Alicerce</span>
+                        <h3>Membro Construtor Bronze</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <defs>
+                                    <radialGradient id="bronzeMedal" cx="35%" cy="35%" r="70%">
+                                        <stop offset="0%" stop-color="#d7a876"/>
+                                        <stop offset="55%" stop-color="#8c5828"/>
+                                        <stop offset="100%" stop-color="#4b2c10"/>
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="62" fill="url(#bronzeMedal)" stroke="#3d220b" stroke-width="4"/>
+                                <circle cx="80" cy="80" r="51" fill="none" stroke="#f3cfa7" stroke-width="1.5"/>
+                                <path d="M80,48 L58,92 M80,48 L102,92 M55,78 L80,103 L105,78" fill="none" stroke="#f8dec0" stroke-width="3.2" stroke-linecap="round"/>
+                                <text x="80" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#fff5e8" font-family="Cinzel, serif">G</text>
+                                <text x="80" y="116" text-anchor="middle" font-size="8.5" font-weight="700" fill="#f8dec0" font-family="Space Grotesk, sans-serif">BRONZE</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">R$ 500</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Pagamento via Pix • Reconhecimento Membro Construtor
+                            </p>
+                            <button type="button" onclick="openDonationModal('Membro Construtor Bronze', 'R$ 500,00', 'avista', true)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 5: A ESTRUTURA — Membro Construtor Prata -->
+                    <article class="aura-price-card">
+                        <span class="aura-price-card__tag">A Estrutura</span>
+                        <h3>Membro Construtor Prata</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <defs>
+                                    <radialGradient id="silverMedal" cx="35%" cy="35%" r="70%">
+                                        <stop offset="0%" stop-color="#ffffff"/>
+                                        <stop offset="55%" stop-color="#adb5c2"/>
+                                        <stop offset="100%" stop-color="#4e5563"/>
+                                    </radialGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="62" fill="url(#silverMedal)" stroke="#383e4a" stroke-width="4"/>
+                                <circle cx="80" cy="80" r="51" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                                <path d="M80,48 L58,92 M80,48 L102,92 M55,78 L80,103 L105,78" fill="none" stroke="#1b2230" stroke-width="3.2" stroke-linecap="round"/>
+                                <text x="80" y="83" text-anchor="middle" font-size="16" font-weight="700" fill="#13213f" font-family="Cinzel, serif">G</text>
+                                <text x="80" y="116" text-anchor="middle" font-size="8.5" font-weight="700" fill="#13213f" font-family="Space Grotesk, sans-serif">PRATA</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">R$ 1.000</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Pagamento via Pix • Reconhecimento Membro Construtor
+                            </p>
+                            <button type="button" onclick="openDonationModal('Membro Construtor Prata', 'R$ 1.000,00', 'avista', true)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- CARD 6: O LEGADO — Membro Construtor Ouro -->
+                    <article class="aura-price-card">
+                        <span class="aura-price-card__tag">O Legado</span>
+                        <h3>Membro Construtor Ouro</h3>
+
+                        <div class="aura-price-card__media">
+                            <svg viewBox="0 0 160 160" class="w-full h-full">
+                                <defs>
+                                    <radialGradient id="goldMedal" cx="35%" cy="35%" r="70%">
+                                        <stop offset="0%" stop-color="#fff0c2"/>
+                                        <stop offset="50%" stop-color="#cfa349"/>
+                                        <stop offset="100%" stop-color="#6e4e12"/>
+                                    </radialGradient>
+                                </defs>
+                                <polygon points="80,12 96,36 124,28 122,56 146,70 130,94 142,120 114,124 106,150 80,134 54,150 46,124 18,120 30,94 14,70 38,56 36,28 64,36" fill="url(#goldMedal)" stroke="#593e0c" stroke-width="3"/>
+                                <circle cx="80" cy="81" r="40" fill="#13213f" stroke="#f7df9c" stroke-width="2.5"/>
+                                <path d="M80,54 L62,90 M80,54 L98,90 M60,78 L80,98 L100,78" fill="none" stroke="#f7df9c" stroke-width="3" stroke-linecap="round"/>
+                                <text x="80" y="83" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" font-family="Cinzel, serif">G</text>
+                                <text x="80" y="110" text-anchor="middle" font-size="8" font-weight="700" fill="#f7df9c" font-family="Space Grotesk, sans-serif">OURO</text>
+                            </svg>
+                        </div>
+
+                        <div class="aura-price-card__value">R$ 2.500</div>
+                        <p class="text-sm font-medium text-[#50637f] mb-3">Inclui Anel 33 Elos + Certificado</p>
+                        <p class="text-sm text-[#50637f] leading-relaxed">
+                            É hora de fazer a diferença e deixar o seu legado. Não fique de fora.
+                        </p>
+
+                        <div class="aura-price-card__footer">
+                            <p class="text-xs font-medium text-[#50637f] mb-4">
+                                Pagamento via Pix • Benfeitor da Pintura da Abóboda
+                            </p>
+                            <button type="button" onclick="openDonationModal('Membro Construtor Ouro', 'R$ 2.500,00', 'avista', true)" class="aura-button w-full">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <span>Quero Doar</span>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================================
+         RODAPÉ INSTITUCIONAL AURA (DOIS PAINÉIS TRANSLÚCIDOS + BARRA INFERIOR)
+         ===================================================================== -->
+    <footer class="aura-footer">
+        <div class="aura-container">
+            <div class="aura-footer__panel">
+                
+                <!-- Coluna Esquerda: Mensagem Fraterna -->
+                <div class="aura-footer__brand">
+                    <span class="inline-block px-3 py-1 rounded-full bg-[#d1b171]/20 text-[#e8cfa0] text-xs font-bold uppercase tracking-wider mb-3">
+                        ARLS Loja da Luz, 1234
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-display font-bold text-white mb-3">
+                        33 Elos para Coroar o Novo Templo
+                    </h3>
+                    <p class="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
+                        A edificação do nosso Novo Templo é fruto do trabalho conjunto, da união fraterna e da generosidade de cada Irmão e apoiador. Com a sua participação, concluiremos com esplendor a Pintura da Abóboda.
+                    </p>
+                    <a href="#doacao" class="aura-button aura-button--gold">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Fazer Minha Doação</span>
+                    </a>
+                </div>
+
+                <!-- Coluna Direita: Informações da Campanha -->
+                <div class="aura-footer__meta flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-display font-bold text-white mb-4">Dados Oficiais da Campanha</h3>
+                        <ul class="space-y-3.5 text-sm text-white/85">
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-landmark text-[#e8cfa0] mt-1"></i>
+                                <span><strong>Loja:</strong> ARLS Loja da Luz, 1234</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-paint-roller text-[#e8cfa0] mt-1"></i>
+                                <span><strong>Destinação:</strong> 100% Pintura da Abóboda (Meta: R$ 8.250,00)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-key text-[#e8cfa0] mt-1"></i>
+                                <span><strong>Chave Pix Oficial:</strong> <span class="text-[#e8cfa0] font-semibold select-all">rifag3253@gmail.com</span></span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fas fa-ring text-[#e8cfa0] mt-1"></i>
+                                <span><strong>Peça:</strong> 33 Elos Numerados (Aros M ou G) + Certificado</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" onclick="copyPixKey()" class="mt-6 w-full py-3 px-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-[#d1b171]/30 text-[#e8cfa0] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition cursor-pointer">
+                        <i class="far fa-copy"></i>
+                        <span>Copiar Chave Pix (rifag3253@gmail.com)</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="aura-footer__bottom">
+                <div>ARLS Loja da Luz, 1234 • Campanha 33 Elos — Pintura da Abóboda</div>
+                <div>100% do valor arrecadado é revertido integralmente para a obra</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         MODAL INTERATIVO DE DOAÇÃO (FORMULÁRIO + ENVIO WHATSAPP 11982076907)
+         ===================================================================== -->
+    <div id="donationModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+        <div id="donationModalBackdrop" class="absolute inset-0 bg-[#070b14]/75 backdrop-blur-sm"></div>
+        
+        <div class="relative w-full max-w-xl rounded-[28px] bg-[#ffffff] border border-[#e2e8f0] shadow-2xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto">
+            <!-- Cabeçalho do Modal -->
+            <div class="flex items-start justify-between gap-4 pb-4 border-b border-slate-200">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-[#13213f]/10 text-[#13213f] text-[11px] font-bold uppercase tracking-wider mb-1">
+                        Cadastro do Apoiador
+                    </span>
+                    <h3 id="modalPackageTitle" class="text-2xl font-display font-bold text-[#18263f]">Anel 33 Elos + Certificado</h3>
+                    <p id="modalPackageSubtitle" class="text-sm font-semibold text-[#9f7a38]">Cota selecionada: R$ 250,00</p>
+                </div>
+                <button type="button" id="closeDonationModal" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-[#13213f] hover:text-white text-slate-700 flex items-center justify-center transition cursor-pointer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="donorRegistrationForm" onsubmit="handleDonationSubmit(event)" class="mt-5 space-y-4">
+                
+                <!-- 1. CEP * -->
+                <div>
+                    <label for="donorCepInput" class="sis-form-label">
+                        CEP <span class="req">*</span>
+                    </label>
+                    <input type="text" id="donorCepInput" required maxlength="9" placeholder="00000-000" class="sis-form-input">
+                </div>
+
+                <!-- 2. Nome completo * -->
+                <div>
+                    <label for="donorNameInput" class="sis-form-label">
+                        Nome completo <span class="req">*</span>
+                    </label>
+                    <input type="text" id="donorNameInput" required placeholder="" class="sis-form-input">
+                </div>
+
+                <!-- 3. E-mail * -->
+                <div>
+                    <label for="donorEmailInput" class="sis-form-label">
+                        E-mail <span class="req">*</span>
+                    </label>
+                    <input type="email" id="donorEmailInput" required placeholder="Melhor E-mail" class="sis-form-input">
+                </div>
+
+                <!-- 4. CPF * -->
+                <div>
+                    <label for="donorCpfInput" class="sis-form-label">
+                        CPF <span class="req">*</span>
+                    </label>
+                    <input type="text" id="donorCpfInput" required maxlength="14" placeholder="CPF" class="sis-form-input">
+                </div>
+
+                <!-- 5. Celular * -->
+                <div>
+                    <label for="donorPhoneInput" class="sis-form-label">
+                        Celular <span class="req">*</span>
+                    </label>
+                    <input type="tel" id="donorPhoneInput" required maxlength="19" placeholder="+55 (00) 00000-0000" class="sis-form-input">
+                </div>
+
+                <!-- 6. Switch Consentimento LGPD e Termos de Uso + Link -->
+                <div class="pt-1">
+                    <div class="flex items-center gap-3">
+                        <button type="button" id="lgpdSwitchBtn" role="switch" aria-checked="false" onclick="toggleLgpdConsent()" class="lgpd-switch-btn">
+                            <span class="lgpd-switch-knob" id="lgpdSwitchKnob">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </button>
+                        <span onclick="toggleLgpdConsent()" class="text-sm text-slate-600 cursor-pointer select-none">
+                            Consentimento LGPD e Termos de Uso <span class="text-[#e11d48]">*</span>
+                        </span>
+                    </div>
+                    <div class="mt-2">
+                        <button type="button" onclick="togglePrivacyPolicyText()" class="text-xs text-[#7e22ce] underline hover:text-[#581c87] bg-transparent border-0 p-0 cursor-pointer font-medium">
+                            Ler política de privacidade e termos de uso
+                        </button>
+                    </div>
+                    <div id="privacyPolicyBox" class="hidden mt-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 leading-relaxed">
+                        <strong>Política de Privacidade &amp; LGPD (ARLS Loja da Luz, 1234):</strong> Os dados pessoais informados (CEP, Nome completo, E-mail, CPF e Celular) serão utilizados exclusivamente para identificação do apoio, emissão nominal do Certificado de Autenticidade e controle logístico da entrega do anel comemorativo da campanha <em>33 Elos para Coroar o Novo Templo</em>, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+                    </div>
+                </div>
+
+                <hr class="border-slate-200 my-2">
+
+                <!-- Modalidade de Pagamento -->
+                <div>
+                    <span class="sis-form-label">Modalidade de Contribuição</span>
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <button type="button" id="modeAvistaBtn" onclick="setPaymentMode('avista')" class="py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]">
+                            <i class="fas fa-bolt mr-1"></i> Pix à Vista
+                        </button>
+                        <button type="button" id="modeParceladoBtn" onclick="setPaymentMode('parcelado')" class="py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200">
+                            <i class="fas fa-calendar-check mr-1"></i> Parcelado (Sinal)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Aviso Parcelamento (conforme interesse-participacao.txt) -->
+                <div id="parceladoInfoBox" class="hidden p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 leading-relaxed">
+                    <strong><i class="fas fa-info-circle text-amber-700 mr-1"></i> Como funciona o parcelamento:</strong><br>
+                    Você deposita um <strong>sinal (entrada)</strong> via Pix agora e envia mensagem privada junto com o comprovante informando a sua programação de pagamento das parcelas restantes.
+                </div>
+
+                <!-- Seleção de Aro (M ou G) -->
+                <div id="ringSizeWrapper">
+                    <span class="sis-form-label">Tamanho do Aro do Anel</span>
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <button type="button" id="sizeMBtn" onclick="setRingSize('M')" class="py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]">
+                            Aro M
+                        </button>
+                        <button type="button" id="sizeGBtn" onclick="setRingSize('G')" class="py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200">
+                            Aro G
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chave Pix Oficial -->
+                <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                    <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1">Chave Pix Oficial (E-mail)</span>
+                    <div class="flex items-center justify-between gap-2">
+                        <code class="text-sm font-bold text-[#13213f] select-all">rifag3253@gmail.com</code>
+                        <button type="button" onclick="copyPixKey()" class="px-3.5 py-2 rounded-lg bg-[#13213f] text-white text-xs font-bold hover:bg-[#1f3564] transition cursor-pointer shrink-0">
+                            <i class="far fa-copy mr-1"></i> Copiar Pix
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resumo para Enviar com o Comprovante + Envio WhatsApp 11982076907 -->
+                <div>
+                    <div class="flex items-center justify-between mb-1">
+                        <label for="donationMessagePreview" class="text-xs font-bold uppercase tracking-wider text-slate-700">
+                            Resumo para Enviar com o Comprovante
+                        </label>
+                        <button type="button" onclick="copyDonationMessage()" class="text-xs font-bold text-[#9f7a38] hover:underline cursor-pointer bg-transparent border-0 p-0">
+                            <i class="far fa-copy mr-1"></i> Copiar texto
+                        </button>
+                    </div>
+                    <textarea id="donationMessagePreview" rows="4" readonly class="w-full p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 leading-relaxed focus:outline-none"></textarea>
+                </div>
+
+                <!-- Botões de Ação: Copiar Resumo & Enviar via WhatsApp -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    <button type="button" onclick="copyDonationMessage()" class="aura-button aura-button--secondary w-full">
+                        <i class="far fa-copy"></i>
+                        <span>Copiar Resumo</span>
+                    </button>
+                    <button type="submit" class="aura-button aura-button--whatsapp w-full">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Enviar via WhatsApp</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast de Notificação (Substitui alert()) -->
+    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#13213f] text-white text-sm font-semibold shadow-2xl border border-[#d1b171]/40">
+        <i class="fas fa-check-circle text-[#e8cfa0]" id="toastIcon"></i>
+        <span id="toastMessageText">Copiado com sucesso!</span>
+    </div>
+
+    <!-- =====================================================================
+         JAVASCRIPT INTERATIVO (CARROSSEL, SIMULADOR, MÁSCARAS, LGPD E WHATSAPP)
+         ===================================================================== -->
+    <script>
+        // Número de WhatsApp Oficial da Campanha (11 98207-6907)
+        const WHATSAPP_NUMBER = '5511982076907';
+
+        // Estado Global da Aplicação
+        const state = {
+            packageTitle: 'Anel 33 Elos + Certificado',
+            packageValue: 'R$ 250,00',
+            paymentMode: 'avista',
+            ringSize: 'M',
+            includesRing: true,
+            lgpdAccepted: false,
+            heroSlideIndex: 0
+        };
+
+        // 1. Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMobileMenuBtn = document.getElementById('closeMobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
+
+        function toggleMobileMenu(show) {
+            if (show) {
+                mobileMenuOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenuOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        mobileMenuBtn?.addEventListener('click', () => toggleMobileMenu(true));
+        closeMobileMenuBtn?.addEventListener('click', () => toggleMobileMenu(false));
+        mobileMenuBackdrop?.addEventListener('click', () => toggleMobileMenu(false));
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => toggleMobileMenu(false));
+        });
+
+        // 2. Carrossel Vitrine no Hero (Joia <-> Certificado)
+        function setHeroSlide(index) {
+            state.heroSlideIndex = index;
+            const slide0 = document.getElementById('heroSlide0');
+            const slide1 = document.getElementById('heroSlide1');
+            const dot0 = document.getElementById('heroDot0');
+            const dot1 = document.getElementById('heroDot1');
+            const badge = document.getElementById('heroSlideBadge');
+            const caption = document.getElementById('heroSlideCaption');
+
+            if (index === 0) {
+                slide0.classList.remove('hidden');
+                slide0.classList.add('flex');
+                slide1.classList.add('hidden');
+                slide1.classList.remove('flex');
+                dot0.className = 'w-6 h-2 rounded-full bg-[#13213f] transition-all cursor-pointer';
+                dot1.className = 'w-2.5 h-2 rounded-full bg-[#13213f]/30 transition-all cursor-pointer';
+                badge.textContent = 'Peça Comemorativa • Série 01 a 33';
+                caption.textContent = 'Base em bronze forjado com acabamento prateado • Acompanha Certificado de Apoio';
+            } else {
+                slide1.classList.remove('hidden');
+                slide1.classList.add('flex');
+                slide0.classList.add('hidden');
+                slide0.classList.remove('flex');
+                dot1.className = 'w-6 h-2 rounded-full bg-[#13213f] transition-all cursor-pointer';
+                dot0.className = 'w-2.5 h-2 rounded-full bg-[#13213f]/30 transition-all cursor-pointer';
+                badge.textContent = 'Documento Oficial • Exemplar Nº / 33';
+                caption.textContent = 'Certificado de Autenticidade e Apoio • Registro perpétuo da contribuição';
+            }
+        }
+
+        function toggleHeroSlide() {
+            setHeroSlide(state.heroSlideIndex === 0 ? 1 : 0);
+        }
+
+        // 3. Simulador da Barra de Progresso no Hero (Meta R$ 8.250,00 / 33 Elos)
+        const simuladorElos = document.getElementById('simuladorElos');
+        const heroRaisedValue = document.getElementById('heroRaisedValue');
+        const heroElosCount = document.getElementById('heroElosCount');
+        const heroProgressBar = document.getElementById('heroProgressBar');
+
+        simuladorElos?.addEventListener('input', (e) => {
+            const count = parseInt(e.target.value, 10) || 0;
+            const total = count * 250;
+            const pct = Math.min(100, Math.round((count / 33) * 100));
+
+            heroRaisedValue.textContent = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            heroElosCount.textContent = `${count} de 33 Elos Garantidos (${pct}%)`;
+            heroProgressBar.style.width = `${(count / 33) * 100}%`;
+        });
+
+        // 4. Máscaras do Formulário (CEP, CPF e Celular +55)
+        const donorCepInput = document.getElementById('donorCepInput');
+        const donorNameInput = document.getElementById('donorNameInput');
+        const donorEmailInput = document.getElementById('donorEmailInput');
+        const donorCpfInput = document.getElementById('donorCpfInput');
+        const donorPhoneInput = document.getElementById('donorPhoneInput');
+
+        donorCepInput?.addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+            if (v.length > 5) {
+                v = v.slice(0, 5) + '-' + v.slice(5);
+            }
+            e.target.value = v;
+            updateDonationMessage();
+        });
+
+        donorCpfInput?.addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+            if (v.length > 9) {
+                v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+            } else if (v.length > 6) {
+                v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+            } else if (v.length > 3) {
+                v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            }
+            e.target.value = v;
+            updateDonationMessage();
+        });
+
+        donorPhoneInput?.addEventListener('input', (e) => {
+            let digits = e.target.value.replace(/\D/g, '');
+            if (digits.startsWith('55') && digits.length > 2) {
+                digits = digits.slice(2);
+            }
+            digits = digits.slice(0, 11);
+
+            if (digits.length === 0) {
+                e.target.value = '';
+            } else if (digits.length <= 2) {
+                e.target.value = `+55 (${digits}`;
+            } else if (digits.length <= 7) {
+                e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2)}`;
+            } else {
+                e.target.value = `+55 (${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+            }
+            updateDonationMessage();
+        });
+
+        [donorNameInput, donorEmailInput].forEach(input => {
+            input?.addEventListener('input', updateDonationMessage);
+        });
+
+        // 5. Switch LGPD e Política de Privacidade
+        function toggleLgpdConsent() {
+            state.lgpdAccepted = !state.lgpdAccepted;
+            const btn = document.getElementById('lgpdSwitchBtn');
+            const knob = document.getElementById('lgpdSwitchKnob');
+            btn.setAttribute('aria-checked', state.lgpdAccepted ? 'true' : 'false');
+            knob.innerHTML = state.lgpdAccepted ? '<i class="fas fa-check"></i>' : '<i class="fas fa-times"></i>';
+        }
+
+        function togglePrivacyPolicyText() {
+            const box = document.getElementById('privacyPolicyBox');
+            box.classList.toggle('hidden');
+        }
+
+        // 6. Modal Interativo de Doação
+        const donationModal = document.getElementById('donationModal');
+        const closeDonationModalBtn = document.getElementById('closeDonationModal');
+        const donationModalBackdrop = document.getElementById('donationModalBackdrop');
+
+        function openDonationModal(title, valueText, mode, includesRing) {
+            state.packageTitle = title;
+            state.packageValue = valueText;
+            state.includesRing = includesRing;
+
+            document.getElementById('modalPackageTitle').textContent = title;
+            document.getElementById('modalPackageSubtitle').textContent = `Cota selecionada: ${valueText}`;
+
+            const ringSizeWrapper = document.getElementById('ringSizeWrapper');
+            if (includesRing) {
+                ringSizeWrapper.classList.remove('hidden');
+            } else {
+                ringSizeWrapper.classList.add('hidden');
+            }
+
+            setPaymentMode(mode);
+            updateDonationMessage();
+
+            donationModal.classList.remove('hidden');
+            donationModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDonationModal() {
+            donationModal.classList.add('hidden');
+            donationModal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        closeDonationModalBtn?.addEventListener('click', closeDonationModal);
+        donationModalBackdrop?.addEventListener('click', closeDonationModal);
+
+        function setPaymentMode(mode) {
+            state.paymentMode = mode;
+            const avistaBtn = document.getElementById('modeAvistaBtn');
+            const parceladoBtn = document.getElementById('modeParceladoBtn');
+            const parceladoInfoBox = document.getElementById('parceladoInfoBox');
+
+            if (mode === 'avista') {
+                avistaBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]';
+                parceladoBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200';
+                parceladoInfoBox.classList.add('hidden');
+            } else {
+                parceladoBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]';
+                avistaBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200';
+                parceladoInfoBox.classList.remove('hidden');
+            }
+            updateDonationMessage();
+        }
+
+        function setRingSize(size) {
+            state.ringSize = size;
+            const sizeMBtn = document.getElementById('sizeMBtn');
+            const sizeGBtn = document.getElementById('sizeGBtn');
+
+            if (size === 'M') {
+                sizeMBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]';
+                sizeGBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200';
+            } else {
+                sizeGBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-[#13213f] text-white border-[#13213f]';
+                sizeMBtn.className = 'py-2.5 px-3 rounded-xl border text-xs font-bold transition cursor-pointer bg-white text-[#18263f] border-slate-200';
+            }
+            updateDonationMessage();
+        }
+
+        function updateDonationMessage() {
+            const name = donorNameInput?.value.trim() || '[Nome Completo]';
+            const cpf = donorCpfInput?.value.trim() || '[CPF]';
+            const email = donorEmailInput?.value.trim() || '[E-mail]';
+            const phone = donorPhoneInput?.value.trim() || '[Celular]';
+            const cep = donorCepInput?.value.trim() || '[CEP]';
+            const ringLine = state.includesRing ? `\n• Tamanho do Aro: ${state.ringSize}` : '';
+            const modeLine = state.paymentMode === 'avista'
+                ? `• Forma: Pix à Vista (${state.packageValue})`
+                : `• Forma: QUERO PARTICIPAR MAS VOU PARCELAR (Segue comprovante do sinal/entrada + programação de pagamento)`;
+
+            const text = `Olá! Segue meu apoio à campanha "33 Elos para Coroar o Novo Templo" (Pintura da Abóboda — ARLS Loja da Luz, 1234):\n• Apoiador(a): ${name}\n• CPF: ${cpf} | Celular: ${phone}\n• E-mail: ${email} | CEP: ${cep}\n• Cota: ${state.packageTitle}${ringLine}\n${modeLine}`;
+            document.getElementById('donationMessagePreview').value = text;
+        }
+
+        // 7. Validação, Cópia e Abertura do WhatsApp Oficial (11 98207-6907)
+        function handleDonationSubmit(e) {
+            e.preventDefault();
+            if (!state.lgpdAccepted) {
+                showToast('Ative o Consentimento LGPD e Termos de Uso para continuar.', true);
+                return;
+            }
+            updateDonationMessage();
+            const message = document.getElementById('donationMessagePreview').value;
+            fallbackCopyText(message, 'Resumo copiado! Abrindo WhatsApp...');
+
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+            const link = document.createElement('a');
+            link.href = whatsappUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // 8. Cópia Segura para Área de Transferência + Toast
+        function fallbackCopyText(text, successMsg) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            tempInput.style.position = 'fixed';
+            tempInput.style.opacity = '0';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMsg, false);
+            } catch (err) {
+                showToast('Selecione e copie o texto exibido.', false);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function copyPixKey() {
+            fallbackCopyText('rifag3253@gmail.com', 'Chave Pix (rifag3253@gmail.com) copiada!');
+        }
+
+        function copyDonationMessage() {
+            updateDonationMessage();
+            const msg = document.getElementById('donationMessagePreview').value;
+            fallbackCopyText(msg, 'Resumo copiado para a área de transferência!');
+        }
+
+        let toastTimer;
+        function showToast(msg, isWarning) {
+            const toast = document.getElementById('toastNotification');
+            const textEl = document.getElementById('toastMessageText');
+            const iconEl = document.getElementById('toastIcon');
+            textEl.textContent = msg;
+            iconEl.className = isWarning ? 'fas fa-exclamation-triangle text-amber-400' : 'fas fa-check-circle text-[#e8cfa0]';
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
