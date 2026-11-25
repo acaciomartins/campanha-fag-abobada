@@ -551,7 +551,7 @@
             <div class="aura-container">
                 <div class="aura-hero__grid">
                     
-                    <!-- Painel Esquerdo: Narrativa + Meta R$ 8.250,00 -->
+                    <!-- Painel Esquerdo: Narrativa + Meta R$ 8.250,00 (via valorarrecadado.txt) -->
                     <div class="aura-hero__content flex flex-col justify-between">
                         <div>
                             <div class="flex flex-wrap gap-2.5 mb-5">
@@ -576,31 +576,27 @@
                             </p>
                         </div>
 
-                        <!-- Barra de Progresso Interativa -->
+                        <!-- Barra de Progresso Dinâmica (Carregada de valorarrecadado.txt) -->
                         <div class="rounded-2xl p-5 bg-white/10 border border-[#d1b171]/25 mb-6">
                             <div class="flex flex-wrap items-end justify-between gap-2 mb-2">
                                 <div>
                                     <span class="block text-xs uppercase tracking-wider text-[#e8cfa0] font-semibold">Meta da Pintura da Abóboda</span>
-                                    <span class="text-2xl sm:text-3xl font-display font-bold text-white" id="heroRaisedValue">R$ 4.500,00</span>
+                                    <span class="text-2xl sm:text-3xl font-display font-bold text-white" id="heroRaisedValue">R$ 0,00</span>
                                     <span class="text-sm text-white/70"> de R$ 8.250,00</span>
                                 </div>
                                 <div class="text-right">
                                     <span class="inline-block px-3 py-1 rounded-full bg-[#d1b171]/20 text-[#e8cfa0] text-xs font-bold" id="heroElosCount">
-                                        18 de 33 Elos Garantidos (55%)
+                                        0 de 33 Elos Garantidos (0%)
                                     </span>
                                 </div>
                             </div>
 
                             <div class="w-full h-3.5 rounded-full bg-black/40 overflow-hidden p-0.5 border border-white/10">
-                                <div id="heroProgressBar" class="h-full rounded-full bg-gradient-to-r from-[#b39158] via-[#d1b171] to-[#f3dcab] transition-all duration-500" style="width: 54.5%;"></div>
+                                <div id="heroProgressBar" class="h-full rounded-full bg-gradient-to-r from-[#b39158] via-[#d1b171] to-[#f3dcab] transition-all duration-500" style="width: 0%;"></div>
                             </div>
 
-                            <div class="flex flex-wrap items-center justify-between gap-2 mt-3 text-xs text-white/70">
+                            <div class="mt-3 text-xs text-white/70">
                                 <span>33 unidades numeradas em bronze com acabamento prateado</span>
-                                <div class="flex items-center gap-2">
-                                    <label for="simuladorElos" class="text-[#e8cfa0]">Simular elos:</label>
-                                    <input id="simuladorElos" type="range" min="0" max="33" value="18" class="w-24 accent-[#d1b171] cursor-pointer">
-                                </div>
                             </div>
                         </div>
 
@@ -1399,11 +1395,14 @@
     </div>
 
     <!-- =====================================================================
-         JAVASCRIPT INTERATIVO (CARROSSEL, SIMULADOR, MÁSCARAS, LGPD E WHATSAPP)
+         JAVASCRIPT INTERATIVO (CARROSSEL, VALORARRECADADO.TXT, MÁSCARAS, LGPD E WHATSAPP)
          ===================================================================== -->
     <script>
         // Número de WhatsApp Oficial da Campanha (11 98207-6907)
         const WHATSAPP_NUMBER = '5511982076907';
+        const META_TOTAL_CAMPANHA = 8250;
+        const VALOR_POR_ELO = 250;
+        const TOTAL_ELOS_CAMPANHA = 33;
 
         // Estado Global da Aplicação
         const state = {
@@ -1474,21 +1473,64 @@
             setHeroSlide(state.heroSlideIndex === 0 ? 1 : 0);
         }
 
-        // 3. Simulador da Barra de Progresso no Hero (Meta R$ 8.250,00 / 33 Elos)
-        const simuladorElos = document.getElementById('simuladorElos');
-        const heroRaisedValue = document.getElementById('heroRaisedValue');
-        const heroElosCount = document.getElementById('heroElosCount');
-        const heroProgressBar = document.getElementById('heroProgressBar');
+        // 3. Leitura do Valor Arrecadado via valorarrecadado.txt
+        function parseCurrencyValue(rawText) {
+            if (!rawText) return 0;
+            let cleaned = rawText.replace(/R\$/gi, '').replace(/\s+/g, '').trim();
+            if (!cleaned) return 0;
 
-        simuladorElos?.addEventListener('input', (e) => {
-            const count = parseInt(e.target.value, 10) || 0;
-            const total = count * 250;
-            const pct = Math.min(100, Math.round((count / 33) * 100));
+            if (cleaned.includes(',') && cleaned.includes('.')) {
+                cleaned = cleaned.replace(/\./g, '').replace(',', '.');
+            } else if (cleaned.includes(',')) {
+                cleaned = cleaned.replace(',', '.');
+            }
 
-            heroRaisedValue.textContent = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-            heroElosCount.textContent = `${count} de 33 Elos Garantidos (${pct}%)`;
-            heroProgressBar.style.width = `${(count / 33) * 100}%`;
-        });
+            cleaned = cleaned.replace(/[^0-9.-]/g, '');
+            const parsed = parseFloat(cleaned);
+            return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0;
+        }
+
+        function renderRaisedProgress(amount) {
+            const heroRaisedValue = document.getElementById('heroRaisedValue');
+            const heroElosCount = document.getElementById('heroElosCount');
+            const heroProgressBar = document.getElementById('heroProgressBar');
+
+            const safeAmount = Math.max(0, Number(amount) || 0);
+            const rawPct = (safeAmount / META_TOTAL_CAMPANHA) * 100;
+            const visualPct = Math.min(100, Math.max(0, rawPct));
+            const displayPct = Math.round(rawPct);
+            const elosCount = Math.min(TOTAL_ELOS_CAMPANHA, Math.floor(safeAmount / VALOR_POR_ELO));
+
+            if (heroRaisedValue) {
+                heroRaisedValue.textContent = safeAmount.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                });
+            }
+            if (heroElosCount) {
+                heroElosCount.textContent = `${elosCount} de ${TOTAL_ELOS_CAMPANHA} Elos Garantidos (${displayPct}%)`;
+            }
+            if (heroProgressBar) {
+                heroProgressBar.style.width = `${visualPct}%`;
+            }
+        }
+
+        async function loadValorArrecadado() {
+            try {
+                const response = await fetch('./valorarrecadado.txt?t=' + Date.now(), {
+                    cache: 'no-store'
+                });
+                if (!response.ok) {
+                    renderRaisedProgress(0);
+                    return;
+                }
+                const text = await response.text();
+                const amount = parseCurrencyValue(text);
+                renderRaisedProgress(amount);
+            } catch (error) {
+                renderRaisedProgress(0);
+            }
+        }
 
         // 4. Máscaras do Formulário (CEP, CPF e Celular +55)
         const donorCepInput = document.getElementById('donorCepInput');
@@ -1705,6 +1747,9 @@
                 toast.classList.remove('flex');
             }, 3500);
         }
+
+        // Inicializa leitura do arquivo valorarrecadado.txt ao carregar a página
+        document.addEventListener('DOMContentLoaded', loadValorArrecadado);
     </script>
 </body>
 </html>
